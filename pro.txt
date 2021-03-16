@@ -1,0 +1,9 @@
+␛[0;32mI (1402) GAP: Device found: 94:58:cb:ca:da:b8␛[0m
+␛[0;32mI (1402) GAP: --Class of Device: 0x2508␛[0m
+␛[0;32mI (1402) GAP: --RSSI: -84␛[0m
+␛[0;32mI (1402) GAP: Found a target device, address 94:58:cb:ca:da:b8, name Pro Controller␛[0m
+␛[0;32mI (1412) GAP: Cancel device discovery ...␛[0m
+␛[0;32mI (1422) GAP: Device discovery stopped.␛[0m
+␛[0;32mI (1422) GAP: Discover services ...␛[0m
+␛[0;32mI (4332) GAP: Services for device 94:58:cb:ca:da:b8 found␛[0m
+␛[0;32mI (4332) GAP: --1124␛[0m

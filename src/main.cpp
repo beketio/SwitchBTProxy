@@ -48,7 +48,7 @@ typedef struct {
 
 static app_gap_cb_t m_dev_info;
 
-static char *bda2str(esp_bd_addr_t bda, char *str, size_t size)
+static char *AddrToStr(esp_bd_addr_t bda, char *str, size_t size)
 {
     if (bda == NULL || str == NULL || size < 18) {
         return NULL;
@@ -116,51 +116,67 @@ static bool get_name_from_eir(uint8_t *eir, uint8_t *bdname, uint8_t *bdname_len
 
 static void update_device_info(esp_bt_gap_cb_param_t *param)
 {
-    char bda_str[18];
-    uint32_t cod = 0;
-    int32_t rssi = -129; /* invalid value */
+    char device_addr_str[18];
+    uint32_t device_class = 0;
+    int32_t device_rssi = -129; /* invalid value */
+    char device_name[ESP_BT_GAP_MAX_BDNAME_LEN + 1];
     esp_bt_gap_dev_prop_t *p;
 
-    ESP_LOGI(GAP_TAG, "Device found: %s", bda2str(param->disc_res.bda, bda_str, 18));
+    ESP_LOGI(GAP_TAG, "Device found: %s", AddrToStr(param->disc_res.bda, device_addr_str, 18));
     for (int i = 0; i < param->disc_res.num_prop; i++) {
         p = param->disc_res.prop + i;
         switch (p->type) {
         case ESP_BT_GAP_DEV_PROP_COD:
-            cod = *(uint32_t *)(p->val);
-            ESP_LOGI(GAP_TAG, "--Class of Device: 0x%x", cod);
+            device_class = *(uint32_t *)(p->val);
+            ESP_LOGI(GAP_TAG, "--Class of Device: 0x%x", device_class);
             break;
         case ESP_BT_GAP_DEV_PROP_RSSI:
-            rssi = *(int8_t *)(p->val);
-            ESP_LOGI(GAP_TAG, "--RSSI: %d", rssi);
+            device_rssi = *(int8_t *)(p->val);
+            ESP_LOGI(GAP_TAG, "--RSSI: %d", device_rssi);
             break;
         case ESP_BT_GAP_DEV_PROP_BDNAME:
+            uint8_t lens = (p->len > ESP_BT_GAP_MAX_BDNAME_LEN) ? ESP_BT_GAP_MAX_BDNAME_LEN : (uint8_t)p->len;
+            memcpy(device_name, (uint8_t *)(p->val), lens);
+            device_name[lens] = '\0';
+            ESP_LOGI(GAP_TAG, "--Name: %s", device_name);
+            break;
+        case ESP_BT_GAP_DEV_PROP_EIR:
+            break;
         default:
             break;
         }
     }
 
-    /* search for device with MAJOR service class as "rendering" in COD */
     app_gap_cb_t *p_dev = &m_dev_info;
+
+    // Check if duplicate of last device
     if (p_dev->dev_found && 0 != memcmp(param->disc_res.bda, p_dev->bda, ESP_BD_ADDR_LEN)) {
         return;
     }
 
-    if (!esp_bt_gap_is_valid_cod(cod) ||
-            !(esp_bt_gap_get_cod_major_dev(cod) == ESP_BT_COD_MAJOR_DEV_PHONE)) {
+    // Check if type is peripheral (a controller)
+    if (!esp_bt_gap_is_valid_cod(device_class) ||
+            !(esp_bt_gap_get_cod_major_dev(device_class) == ESP_BT_COD_MAJOR_DEV_PERIPHERAL)) {
         return;
     }
 
+    // Copy address
     memcpy(p_dev->bda, param->disc_res.bda, ESP_BD_ADDR_LEN);
     p_dev->dev_found = true;
+
+    // Read properties
     for (int i = 0; i < param->disc_res.num_prop; i++) {
         p = param->disc_res.prop + i;
         switch (p->type) {
+        // Class of Device
         case ESP_BT_GAP_DEV_PROP_COD:
             p_dev->cod = *(uint32_t *)(p->val);
             break;
+        // RSSI
         case ESP_BT_GAP_DEV_PROP_RSSI:
             p_dev->rssi = *(int8_t *)(p->val);
             break;
+        // Address as string
         case ESP_BT_GAP_DEV_PROP_BDNAME: {
             uint8_t len = (p->len > ESP_BT_GAP_MAX_BDNAME_LEN) ? ESP_BT_GAP_MAX_BDNAME_LEN :
                           (uint8_t)p->len;
@@ -169,6 +185,7 @@ static void update_device_info(esp_bt_gap_cb_param_t *param)
             p_dev->bdname_len = len;
             break;
         }
+        // Extended Inquiry Response
         case ESP_BT_GAP_DEV_PROP_EIR: {
             memcpy(p_dev->eir, (uint8_t *)(p->val), p->len);
             p_dev->eir_len = p->len;
@@ -180,11 +197,17 @@ static void update_device_info(esp_bt_gap_cb_param_t *param)
     }
 
     if (p_dev->eir && p_dev->bdname_len == 0) {
+        // Get name
         get_name_from_eir(p_dev->eir, p_dev->bdname, &p_dev->bdname_len);
-        ESP_LOGI(GAP_TAG, "Found a target device, address %s, name %s", bda_str, p_dev->bdname);
-        p_dev->state = APP_GAP_STATE_DEVICE_DISCOVER_COMPLETE;
-        ESP_LOGI(GAP_TAG, "Cancel device discovery ...");
-        esp_bt_gap_cancel_discovery();
+        // Check if Pro Controller
+        if(strncmp((const char*) p_dev->bdname, "Pro Controller", p_dev->bdname_len) == 0) {
+            ESP_LOGI(GAP_TAG, "Found a pro controller at address %s", device_addr_str);
+            p_dev->state = APP_GAP_STATE_DEVICE_DISCOVER_COMPLETE;
+            ESP_LOGI(GAP_TAG, "Stop controller discovery...");
+            esp_bt_gap_cancel_discovery();
+        } else {
+            ESP_LOGI(GAP_TAG, "Found an HID device at address %s, name: \'%s\'", device_addr_str, p_dev->bdname);
+        }
     }
 }
 
@@ -228,14 +251,14 @@ static void bt_app_gap_cb(esp_bt_gap_cb_event_t event, esp_bt_gap_cb_param_t *pa
                 p_dev->state == APP_GAP_STATE_SERVICE_DISCOVERING) {
             p_dev->state = APP_GAP_STATE_SERVICE_DISCOVER_COMPLETE;
             if (param->rmt_srvcs.stat == ESP_BT_STATUS_SUCCESS) {
-                ESP_LOGI(GAP_TAG, "Services for device %s found",  bda2str(p_dev->bda, bda_str, 18));
+                ESP_LOGI(GAP_TAG, "Services for device %s found",  AddrToStr(p_dev->bda, bda_str, 18));
                 for (int i = 0; i < param->rmt_srvcs.num_uuids; i++) {
                     esp_bt_uuid_t *u = param->rmt_srvcs.uuid_list + i;
                     ESP_LOGI(GAP_TAG, "--%s", uuid2str(u, uuid_str, 37));
                     // ESP_LOGI(GAP_TAG, "--%d", u->len);
                 }
             } else {
-                ESP_LOGI(GAP_TAG, "Services for device %s not found",  bda2str(p_dev->bda, bda_str, 18));
+                ESP_LOGI(GAP_TAG, "Services for device %s not found",  AddrToStr(p_dev->bda, bda_str, 18));
             }
         }
         break;
