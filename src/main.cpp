@@ -11,7 +11,7 @@
 #include "esp_bt_device.h"
 #include "esp_gap_bt_api.h"
 
-
+#include "utils.h"
 #include "gamepad.h"
 #include "switch_pro_controller.h"
 
@@ -47,40 +47,6 @@ typedef struct {
 } app_gap_cb_t;
 
 static app_gap_cb_t m_dev_info;
-
-static char *AddrToStr(esp_bd_addr_t bda, char *str, size_t size)
-{
-    if (bda == NULL || str == NULL || size < 18) {
-        return NULL;
-    }
-
-    uint8_t *p = bda;
-    sprintf(str, "%02x:%02x:%02x:%02x:%02x:%02x",
-            p[0], p[1], p[2], p[3], p[4], p[5]);
-    return str;
-}
-
-static char *uuid2str(esp_bt_uuid_t *uuid, char *str, size_t size)
-{
-    if (uuid == NULL || str == NULL) {
-        return NULL;
-    }
-
-    if (uuid->len == 2 && size >= 5) {
-        sprintf(str, "%04x", uuid->uuid.uuid16);
-    } else if (uuid->len == 4 && size >= 9) {
-        sprintf(str, "%08x", uuid->uuid.uuid32);
-    } else if (uuid->len == 16 && size >= 37) {
-        uint8_t *p = uuid->uuid.uuid128;
-        sprintf(str, "%02x%02x%02x%02x-%02x%02x-%02x%02x-%02x%02x-%02x%02x%02x%02x%02x%02x",
-                p[15], p[14], p[13], p[12], p[11], p[10], p[9], p[8],
-                p[7], p[6], p[5], p[4], p[3], p[2], p[1], p[0]);
-    } else {
-        return NULL;
-    }
-
-    return str;
-}
 
 static bool get_name_from_eir(uint8_t *eir, uint8_t *bdname, uint8_t *bdname_len)
 {
@@ -122,7 +88,7 @@ static void update_device_info(esp_bt_gap_cb_param_t *param)
     char device_name[ESP_BT_GAP_MAX_BDNAME_LEN + 1];
     esp_bt_gap_dev_prop_t *p;
 
-    ESP_LOGI(GAP_TAG, "Device found: %s", AddrToStr(param->disc_res.bda, device_addr_str, 18));
+    ESP_LOGI(GAP_TAG, "Device found: %s", Utils::AddrToStr(param->disc_res.bda, device_addr_str, 18));
     for (int i = 0; i < param->disc_res.num_prop; i++) {
         p = param->disc_res.prop + i;
         switch (p->type) {
@@ -251,14 +217,14 @@ static void bt_app_gap_cb(esp_bt_gap_cb_event_t event, esp_bt_gap_cb_param_t *pa
                 p_dev->state == APP_GAP_STATE_SERVICE_DISCOVERING) {
             p_dev->state = APP_GAP_STATE_SERVICE_DISCOVER_COMPLETE;
             if (param->rmt_srvcs.stat == ESP_BT_STATUS_SUCCESS) {
-                ESP_LOGI(GAP_TAG, "Services for device %s found",  AddrToStr(p_dev->bda, bda_str, 18));
+                ESP_LOGI(GAP_TAG, "Services for device %s found", Utils::AddrToStr(p_dev->bda, bda_str, 18));
                 for (int i = 0; i < param->rmt_srvcs.num_uuids; i++) {
                     esp_bt_uuid_t *u = param->rmt_srvcs.uuid_list + i;
-                    ESP_LOGI(GAP_TAG, "--%s", uuid2str(u, uuid_str, 37));
+                    ESP_LOGI(GAP_TAG, "--%s", Utils::UUIDToStr(u, uuid_str, 37));
                     // ESP_LOGI(GAP_TAG, "--%d", u->len);
                 }
             } else {
-                ESP_LOGI(GAP_TAG, "Services for device %s not found",  AddrToStr(p_dev->bda, bda_str, 18));
+                ESP_LOGI(GAP_TAG, "Services for device %s not found", Utils::AddrToStr(p_dev->bda, bda_str, 18));
             }
         }
         break;
@@ -274,7 +240,7 @@ static void bt_app_gap_cb(esp_bt_gap_cb_event_t event, esp_bt_gap_cb_param_t *pa
 
 static void bt_app_gap_start_up(void)
 {
-    char *dev_name = "ESP_GAP_INQRUIY";
+    const char *dev_name = "ESP_GAP_INQRUIY";
     esp_bt_dev_set_device_name(dev_name);
 
     /* register GAP callback function */
@@ -299,6 +265,7 @@ void app_main(void)
     }
     ESP_ERROR_CHECK( ret );
 
+    // Releases BLE controller memory. BLE cannot be used after calling this.
     ESP_ERROR_CHECK(esp_bt_controller_mem_release(ESP_BT_MODE_BLE));
 
     esp_bt_controller_config_t bt_cfg = BT_CONTROLLER_INIT_CONFIG_DEFAULT();
