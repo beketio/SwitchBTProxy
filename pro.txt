@@ -1,9 +1,25 @@
-␛[0;32mI (1402) GAP: Device found: 94:58:cb:ca:da:b8␛[0m
-␛[0;32mI (1402) GAP: --Class of Device: 0x2508␛[0m
-␛[0;32mI (1402) GAP: --RSSI: -84␛[0m
-␛[0;32mI (1402) GAP: Found a target device, address 94:58:cb:ca:da:b8, name Pro Controller␛[0m
-␛[0;32mI (1412) GAP: Cancel device discovery ...␛[0m
-␛[0;32mI (1422) GAP: Device discovery stopped.␛[0m
-␛[0;32mI (1422) GAP: Discover services ...␛[0m
-␛[0;32mI (4332) GAP: Services for device 94:58:cb:ca:da:b8 found␛[0m
-␛[0;32mI (4332) GAP: --1124␛[0m
+␛[0;31mE (15196) BT_HIDH: Report Not Found: 63 mode: REPORT␛[0m
+␛[0;32mI (15196) HID_HOST: HID Event: 0␛[0m
+␛[0;32mI (15196) HID_HOST: Starting open event␛[0m
+␛[0;32mI (15196) HID_HOST: got config␛[0m
+␛[0;32mI (15206) HID_HOST: got addr␛[0m
+␛[0;32mI (15206) HID_HOST: got name␛[0m
+␛[0;32mI (15206) HID_HOST: 94:58:cb:ca:da:b8 OPEN (Config null): ␛[0m
+BDA:94:58:cb:ca:da:b8, Status: OK, Connected: YES, Handle: 0, Usage: GAMEPAD
+Name: , Manufacturer: , Serial Number: 
+PID: 0x2009, VID: 0x057e, VERSION: 0x0001
+Report Map Length: 170
+    VENDOR  OUTPUT REPORT, ID:  18, Length:  48
+    VENDOR  OUTPUT REPORT, ID:  17, Length:  48
+    VENDOR  OUTPUT REPORT, ID:  16, Length:  48
+    VENDOR  OUTPUT REPORT, ID:   1, Length:  48
+    VENDOR   INPUT REPORT, ID:  63, Length:  11
+    VENDOR   INPUT REPORT, ID:  51, Length: 361
+    VENDOR   INPUT REPORT, ID:  50, Length: 361
+    VENDOR   INPUT REPORT, ID:  49, Length: 361
+    VENDOR   INPUT REPORT, ID:  48, Length:  48
+   GAMEPAD   INPUT REPORT, ID:  33, Length:  48
+␛[0;32mI (15276) MAIN: HID Device connected:␛[0m
+␛[0;32mI (15276) MAIN:  -- Product ID: 8201␛[0m
+␛[0;32mI (15286) MAIN:  -- Vender ID: 1406␛[0m
+␛[0;32mI (15286) MAIN:  -- Version: 1␛[0m

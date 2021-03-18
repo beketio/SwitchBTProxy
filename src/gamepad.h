@@ -76,12 +76,5 @@ private:
 
 };
 
-class BtGamepad {
-public:
-    virtual void ReceiveBtData(uint8_t *data) = 0;
-    virtual void SendBtData(uint8_t *data) = 0;
-};
-
-
 
 

@@ -1,6 +1,6 @@
-#include "utils.h"
+#include "bt_utils.h"
 
-char *Utils::AddrToStr(esp_bd_addr_t bda, char *str, size_t size) {
+char *BtUtils::AddrToStr(esp_bd_addr_t bda, char *str, size_t size) {
     if (bda == NULL || str == NULL || size < 18) {
         return NULL;
     }
@@ -11,8 +11,7 @@ char *Utils::AddrToStr(esp_bd_addr_t bda, char *str, size_t size) {
     return str;
 }
 
-
-char *Utils::UUIDToStr(esp_bt_uuid_t *uuid, char *str, size_t size) {
+char *BtUtils::UUIDToStr(esp_bt_uuid_t *uuid, char *str, size_t size) {
     if (uuid == NULL || str == NULL) {
         return NULL;
     }
@@ -32,3 +31,4 @@ char *Utils::UUIDToStr(esp_bt_uuid_t *uuid, char *str, size_t size) {
 
     return str;
 }
+

@@ -4,7 +4,7 @@
 
 #include "switch_pro_controller.h"
 
-SwitchProController::SwitchProController() {
+SwitchProController::SwitchProController(esp_hidh_dev_t *hid_device_id) : BtHidInputDevice(hid_device_id) {
     button_map[GAMEPAD_BUTTON_A] = S_PRO_BUTTON1_A;
     button_map[GAMEPAD_BUTTON_B] = S_PRO_BUTTON1_B;
     button_map[GAMEPAD_BUTTON_X] = S_PRO_BUTTON1_X;
@@ -21,6 +21,14 @@ SwitchProController::SwitchProController() {
     button_map[GAMEPAD_BUTTON_RS] = S_PRO_BUTTON2_RS + 8;
     button_map[GAMEPAD_BUTTON_HOME] = S_PRO_BUTTON2_HOME + 8;
     button_map[GAMEPAD_BUTTON_MEDIA] = S_PRO_BUTTON2_CAPTURE + 8;
+}
+
+void SwitchProController::onInputEvent(uint8_t *data, uint16_t length) {
+    ESP_LOGI("PROCON", "Recieved input data");
+}
+
+void SwitchProController::onFeatureEvent(uint8_t *data, uint16_t length) {
+    ESP_LOGI("PROCON", "Recieved feature data");
 }
 
 void SwitchProController::ReceiveBtData(uint8_t *data) {

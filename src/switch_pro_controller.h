@@ -5,6 +5,7 @@
 #pragma once
 
 #include "gamepad.h"
+#include "bluetooth/bt_hid_input_device.h"
 
 #define S_PRO_BUTTON1_Y         0
 #define S_PRO_BUTTON1_X         1
@@ -33,10 +34,14 @@
 #define S_PRO_BUTTON3_L         6
 #define S_PRO_BUTTON3_ZL        7
 
-class SwitchProController: public Gamepad, public BtGamepad {
+class SwitchProController: public Gamepad, public BtHidInputDevice {
 
 public:
-    SwitchProController();
+    SwitchProController(esp_hidh_dev_t *hid_device_id);
+    void onInputEvent(uint8_t *data, uint16_t length);
+    void onFeatureEvent(uint8_t *data, uint16_t length);
+
+private:
     void ReceiveBtData(uint8_t *data);
     void SendBtData(uint8_t *data);
 
