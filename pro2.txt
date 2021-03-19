@@ -1,0 +1,1189 @@
+
+␛[0;32mI (14182) MAIN: Connected to HID Device␛[0m
+␛[0;31mE (17262) BT_BTM: tBTM_SEC_DEV:0x3ffc239c rs_disc_pending=0
+␛[0m
+␛[0;31mE (25392) BT_BTM: tBTM_SEC_DEV:0x3ffc239c rs_disc_pending=0
+␛[0m
+␛[0;31mE (25562) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (25692) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (25702) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (25702) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (25702) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (25722) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (25742) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (25752) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (25762) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (25782) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (25792) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;33mW (25812) BT_SDP: process_service_attr_rsp
+␛[0m
+␛[0;31mE (25812) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (25822) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (25842) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (25862) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (25872) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (25892) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (25902) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (25922) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (25932) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (25952) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (25962) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (25982) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (25992) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (26012) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (26022) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (26042) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;33mW (26052) BT_SDP: process_service_attr_rsp
+␛[0m
+␛[0;31mE (26052) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (26062) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (26072) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;32mI (26082) BT_HIDH: Device Not Found? It's probably a reconnect.␛[0m
+␛[0;32mI (26082) HID_HOST: HID Event: 0␛[0m
+␛[0;32mI (26082) HID_HOST: Starting open event␛[0m
+␛[0;32mI (26082) HID_HOST: got config␛[0m
+␛[0;32mI (26092) HID_HOST: got addr␛[0m
+␛[0;32mI (26092) HID_HOST: got name␛[0m
+␛[0;32mI (26092) HID_HOST: 94:58:cb:ca:da:b8 OPEN (Config null): ␛[0m
+BDA:94:58:cb:ca:da:b8, Status: OK, Connected: YES, Handle: 0, Usage: GAMEPAD
+Name: , Manufacturer: , Serial Number:
+PID: 0x2009, VID: 0x057e, VERSION: 0x0001
+Report Map Length: 170
+    VENDOR  OUTPUT REPORT, ID:  18, Length:  48
+    VENDOR  OUTPUT REPORT, ID:  17, Length:  48
+    VENDOR  OUTPUT REPORT, ID:  16, Length:  48
+    VENDOR  OUTPUT REPORT, ID:   1, Length:  48
+    VENDOR   INPUT REPORT, ID:  63, Length:  11
+    VENDOR   INPUT REPORT, ID:  51, Length: 361
+    VENDOR   INPUT REPORT, ID:  50, Length: 361
+    VENDOR   INPUT REPORT, ID:  49, Length: 361
+    VENDOR   INPUT REPORT, ID:  48, Length:  48
+   GAMEPAD   INPUT REPORT, ID:  33, Length:  48
+␛[0;32mI (26162) MAIN: HID Device connected:␛[0m
+␛[0;32mI (26162) MAIN:  -- Product ID: 8201␛[0m
+␛[0;32mI (26172) MAIN:  -- Vender ID: 1406␛[0m
+␛[0;32mI (26172) MAIN:  -- Version: 1␛[0m
+␛[0;32mI (26172) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (26182) HID_HOST: Starting open event␛[0m
+␛[0;32mI (26182) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (26192) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (26192) HID_HOST: Starting open event␛[0m
+␛[0;32mI (26202) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (26202) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (26212) HID_HOST: Starting open event␛[0m
+␛[0;32mI (26212) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (26222) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (26222) HID_HOST: Starting open event␛[0m
+␛[0;32mI (26232) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (26232) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (26242) HID_HOST: Starting open event␛[0m
+␛[0;32mI (26242) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (26252) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (26252) HID_HOST: Starting open event␛[0m
+␛[0;32mI (26262) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (26262) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (26272) HID_HOST: Starting open event␛[0m
+␛[0;32mI (26272) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (26282) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (26282) HID_HOST: Starting open event␛[0m
+␛[0;32mI (26292) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (26292) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (26302) HID_HOST: Starting open event␛[0m
+␛[0;32mI (26302) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (26312) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (26312) HID_HOST: Starting open event␛[0m
+␛[0;32mI (26322) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (26322) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (26332) HID_HOST: Starting open event␛[0m
+␛[0;32mI (26332) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (26342) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (26342) HID_HOST: Starting open event␛[0m
+␛[0;32mI (26352) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (26352) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (26362) HID_HOST: Starting open event␛[0m
+␛[0;32mI (26362) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (26372) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (26372) HID_HOST: Starting open event␛[0m
+␛[0;32mI (26382) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (26382) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (26392) HID_HOST: Starting open event␛[0m
+␛[0;32mI (26392) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (26402) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (26402) HID_HOST: Starting open event␛[0m
+␛[0;32mI (26412) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (26412) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (26422) HID_HOST: Starting open event␛[0m
+␛[0;32mI (26422) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (26432) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (26432) HID_HOST: Starting open event␛[0m
+␛[0;32mI (26442) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (26442) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (26452) HID_HOST: Starting open event␛[0m
+␛[0;32mI (26452) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (26462) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (26462) HID_HOST: Starting open event␛[0m
+␛[0;32mI (26462) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (26472) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (26482) HID_HOST: Starting open event␛[0m
+␛[0;32mI (26482) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (26492) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (26492) HID_HOST: Starting open event␛[0m
+␛[0;32mI (26492) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (26502) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (26502) HID_HOST: Starting open event␛[0m
+␛[0;32mI (26512) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (26522) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (26522) HID_HOST: Starting open event␛[0m
+␛[0;32mI (26522) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (26532) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (26532) HID_HOST: Starting open event␛[0m
+␛[0;32mI (26542) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (26552) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (26552) HID_HOST: Starting open event␛[0m
+␛[0;32mI (26552) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (26562) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (26562) HID_HOST: Starting open event␛[0m
+␛[0;32mI (26572) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (26582) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (26582) HID_HOST: Starting open event␛[0m
+␛[0;32mI (26582) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (26592) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (26592) HID_HOST: Starting open event␛[0m
+␛[0;32mI (26602) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (26602) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (26612) HID_HOST: Starting open event␛[0m
+␛[0;32mI (26612) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (26622) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (26622) HID_HOST: Starting open event␛[0m
+␛[0;32mI (26632) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (26632) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (26642) HID_HOST: Starting open event␛[0m
+␛[0;32mI (26642) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (26652) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (26652) HID_HOST: Starting open event␛[0m
+␛[0;32mI (26662) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (26662) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (26672) HID_HOST: Starting open event␛[0m
+␛[0;32mI (26672) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (26682) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (26682) HID_HOST: Starting open event␛[0m
+␛[0;32mI (26692) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (26692) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (26702) HID_HOST: Starting open event␛[0m
+␛[0;32mI (26702) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (26712) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (26712) HID_HOST: Starting open event␛[0m
+␛[0;32mI (26722) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (26722) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (26732) HID_HOST: Starting open event␛[0m
+␛[0;32mI (26732) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (26742) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (26742) HID_HOST: Starting open event␛[0m
+␛[0;32mI (26752) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (26752) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (26762) HID_HOST: Starting open event␛[0m
+␛[0;32mI (26762) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (26772) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (26772) HID_HOST: Starting open event␛[0m
+␛[0;32mI (26782) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (26782) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (26792) HID_HOST: Starting open event␛[0m
+␛[0;32mI (26792) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (26802) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (26802) HID_HOST: Starting open event␛[0m
+␛[0;32mI (26812) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (26812) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (26822) HID_HOST: Starting open event␛[0m
+␛[0;32mI (26822) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (26832) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (26832) HID_HOST: Starting open event␛[0m
+␛[0;32mI (26842) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (26842) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (26852) HID_HOST: Starting open event␛[0m
+␛[0;32mI (26852) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (26862) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (26862) HID_HOST: Starting open event␛[0m
+␛[0;32mI (26872) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (26872) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (26882) HID_HOST: Starting open event␛[0m
+␛[0;32mI (26882) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (26892) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (26892) HID_HOST: Starting open event␛[0m
+␛[0;32mI (26902) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (26902) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (26912) HID_HOST: Starting open event␛[0m
+␛[0;32mI (26912) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (26922) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (26922) HID_HOST: Starting open event␛[0m
+␛[0;32mI (26932) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (26932) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (26942) HID_HOST: Starting open event␛[0m
+␛[0;32mI (26942) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (26952) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (26952) HID_HOST: Starting open event␛[0m
+␛[0;32mI (26952) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (26962) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (26972) HID_HOST: Starting open event␛[0m
+␛[0;32mI (26972) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (26982) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (26982) HID_HOST: Starting open event␛[0m
+␛[0;32mI (26982) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (26992) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (26992) HID_HOST: Starting open event␛[0m
+␛[0;32mI (27002) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (27012) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (27012) HID_HOST: Starting open event␛[0m
+␛[0;32mI (27012) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (27022) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (27022) HID_HOST: Starting open event␛[0m
+␛[0;32mI (27032) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (27042) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (27042) HID_HOST: Starting open event␛[0m
+␛[0;32mI (27042) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (27052) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (27052) HID_HOST: Starting open event␛[0m
+␛[0;32mI (27062) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (27072) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (27072) HID_HOST: Starting open event␛[0m
+␛[0;32mI (27072) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (27082) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (27082) HID_HOST: Starting open event␛[0m
+␛[0;32mI (27092) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (27092) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (27102) HID_HOST: Starting open event␛[0m
+␛[0;32mI (27102) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (27112) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (27112) HID_HOST: Starting open event␛[0m
+␛[0;32mI (27122) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (27122) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (27132) HID_HOST: Starting open event␛[0m
+␛[0;32mI (27132) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (27142) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (27142) HID_HOST: Starting open event␛[0m
+␛[0;32mI (27152) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (27152) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (27162) HID_HOST: Starting open event␛[0m
+␛[0;32mI (27162) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (27172) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (27172) HID_HOST: Starting open event␛[0m
+␛[0;32mI (27182) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (27182) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (27192) HID_HOST: Starting open event␛[0m
+␛[0;32mI (27192) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (27202) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (27202) HID_HOST: Starting open event␛[0m
+␛[0;32mI (27212) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (27212) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (27222) HID_HOST: Starting open event␛[0m
+␛[0;32mI (27222) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (27232) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (27232) HID_HOST: Starting open event␛[0m
+␛[0;32mI (27242) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (27242) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (27252) HID_HOST: Starting open event␛[0m
+␛[0;32mI (27252) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (27262) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (27262) HID_HOST: Starting open event␛[0m
+␛[0;32mI (27272) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (27272) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (27282) HID_HOST: Starting open event␛[0m
+␛[0;32mI (27282) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (27292) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (27292) HID_HOST: Starting open event␛[0m
+␛[0;32mI (27302) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (27302) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (27312) HID_HOST: Starting open event␛[0m
+␛[0;32mI (27312) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (27322) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (27322) HID_HOST: Starting open event␛[0m
+␛[0;32mI (27332) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (27332) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (27342) HID_HOST: Starting open event␛[0m
+␛[0;32mI (27342) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (27352) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (27352) HID_HOST: Starting open event␛[0m
+␛[0;32mI (27362) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (27362) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (27372) HID_HOST: Starting open event␛[0m
+␛[0;32mI (27372) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (27382) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (27382) HID_HOST: Starting open event␛[0m
+␛[0;32mI (27392) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (27392) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (27402) HID_HOST: Starting open event␛[0m
+␛[0;32mI (27402) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (27412) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (27412) HID_HOST: Starting open event␛[0m
+␛[0;32mI (27412) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (27422) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (27432) HID_HOST: Starting open event␛[0m
+␛[0;32mI (27432) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (27442) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (27442) HID_HOST: Starting open event␛[0m
+␛[0;32mI (27442) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (27452) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (27452) HID_HOST: Starting open event␛[0m
+␛[0;32mI (27462) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (27472) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (27472) HID_HOST: Starting open event␛[0m
+␛[0;32mI (27472) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (27482) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (27482) HID_HOST: Starting open event␛[0m
+␛[0;32mI (27492) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (27502) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (27502) HID_HOST: Starting open event␛[0m
+␛[0;32mI (27502) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (27512) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (27512) HID_HOST: Starting open event␛[0m
+␛[0;32mI (27522) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (27532) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (27532) HID_HOST: Starting open event␛[0m
+␛[0;32mI (27532) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (27542) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (27542) HID_HOST: Starting open event␛[0m
+␛[0;32mI (27552) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (27552) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (27562) HID_HOST: Starting open event␛[0m
+␛[0;32mI (27562) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (27572) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (27572) HID_HOST: Starting open event␛[0m
+␛[0;32mI (27582) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (27582) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (27592) HID_HOST: Starting open event␛[0m
+␛[0;32mI (27592) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (27602) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (27602) HID_HOST: Starting open event␛[0m
+␛[0;32mI (27612) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (27612) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (27622) HID_HOST: Starting open event␛[0m
+␛[0;32mI (27622) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (27632) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (27632) HID_HOST: Starting open event␛[0m
+␛[0;32mI (27642) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (27642) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (27652) HID_HOST: Starting open event␛[0m
+␛[0;32mI (27652) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (27662) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (27662) HID_HOST: Starting open event␛[0m
+␛[0;32mI (27672) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (27672) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (27682) HID_HOST: Starting open event␛[0m
+␛[0;32mI (27682) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (27692) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (27692) HID_HOST: Starting open event␛[0m
+␛[0;32mI (27702) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (27702) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (27712) HID_HOST: Starting open event␛[0m
+␛[0;32mI (27712) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (27722) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (27722) HID_HOST: Starting open event␛[0m
+␛[0;32mI (27732) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (27732) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (27742) HID_HOST: Starting open event␛[0m
+␛[0;32mI (27742) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (27752) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (27752) HID_HOST: Starting open event␛[0m
+␛[0;32mI (27762) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (27762) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (27772) HID_HOST: Starting open event␛[0m
+␛[0;32mI (27772) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (27782) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (27782) HID_HOST: Starting open event␛[0m
+␛[0;32mI (27792) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (27792) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (27802) HID_HOST: Starting open event␛[0m
+␛[0;32mI (27802) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (27812) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (27812) HID_HOST: Starting open event␛[0m
+␛[0;32mI (27822) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (27822) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (27832) HID_HOST: Starting open event␛[0m
+␛[0;32mI (27832) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (27842) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (27842) HID_HOST: Starting open event␛[0m
+␛[0;32mI (27852) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (27852) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (27862) HID_HOST: Starting open event␛[0m
+␛[0;32mI (27862) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (27872) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (27872) HID_HOST: Starting open event␛[0m
+␛[0;32mI (27882) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (27882) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (27892) HID_HOST: Starting open event␛[0m
+␛[0;32mI (27892) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (27902) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (27902) HID_HOST: Starting open event␛[0m
+␛[0;32mI (27902) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (27912) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (27922) HID_HOST: Starting open event␛[0m
+␛[0;32mI (27922) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (27932) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (27932) HID_HOST: Starting open event␛[0m
+␛[0;32mI (27932) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (27942) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (27942) HID_HOST: Starting open event␛[0m
+␛[0;32mI (27952) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (27962) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (27962) HID_HOST: Starting open event␛[0m
+␛[0;32mI (27962) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (27972) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (27972) HID_HOST: Starting open event␛[0m
+␛[0;32mI (27982) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (27992) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (27992) HID_HOST: Starting open event␛[0m
+␛[0;32mI (27992) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (28002) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (28002) HID_HOST: Starting open event␛[0m
+␛[0;32mI (28012) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (28022) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (28022) HID_HOST: Starting open event␛[0m
+␛[0;32mI (28022) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (28032) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (28032) HID_HOST: Starting open event␛[0m
+␛[0;32mI (28042) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (28042) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (28052) HID_HOST: Starting open event␛[0m
+␛[0;32mI (28052) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (28062) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (28062) HID_HOST: Starting open event␛[0m
+␛[0;32mI (28072) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (28072) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (28082) HID_HOST: Starting open event␛[0m
+␛[0;32mI (28082) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (28092) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (28092) HID_HOST: Starting open event␛[0m
+␛[0;32mI (28102) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (28102) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (28112) HID_HOST: Starting open event␛[0m
+␛[0;32mI (28112) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (28122) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (28122) HID_HOST: Starting open event␛[0m
+␛[0;32mI (28132) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (28132) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (28142) HID_HOST: Starting open event␛[0m
+␛[0;32mI (28142) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (28152) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (28152) HID_HOST: Starting open event␛[0m
+␛[0;32mI (28162) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (28162) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (28172) HID_HOST: Starting open event␛[0m
+␛[0;32mI (28172) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (28182) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (28182) HID_HOST: Starting open event␛[0m
+␛[0;32mI (28192) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (28192) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (28202) HID_HOST: Starting open event␛[0m
+␛[0;32mI (28202) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (28212) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (28212) HID_HOST: Starting open event␛[0m
+␛[0;32mI (28222) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (28222) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (28232) HID_HOST: Starting open event␛[0m
+␛[0;32mI (28232) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (28242) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (28242) HID_HOST: Starting open event␛[0m
+␛[0;32mI (28252) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (28252) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (28262) HID_HOST: Starting open event␛[0m
+␛[0;32mI (28262) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (28272) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (28272) HID_HOST: Starting open event␛[0m
+␛[0;32mI (28282) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (28282) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (28292) HID_HOST: Starting open event␛[0m
+␛[0;32mI (28292) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (28302) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (28302) HID_HOST: Starting open event␛[0m
+␛[0;32mI (28312) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (28312) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (28322) HID_HOST: Starting open event␛[0m
+␛[0;32mI (28322) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (28332) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (28332) HID_HOST: Starting open event␛[0m
+␛[0;32mI (28342) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (28342) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (28352) HID_HOST: Starting open event␛[0m
+␛[0;32mI (28352) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (28362) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (28362) HID_HOST: Starting open event␛[0m
+␛[0;32mI (28362) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (28372) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (28382) HID_HOST: Starting open event␛[0m
+␛[0;32mI (28382) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (28392) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (28392) HID_HOST: Starting open event␛[0m
+␛[0;32mI (28392) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (28402) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (28402) HID_HOST: Starting open event␛[0m
+␛[0;32mI (28412) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (28422) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (28422) HID_HOST: Starting open event␛[0m
+␛[0;32mI (28422) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (28432) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (28432) HID_HOST: Starting open event␛[0m
+␛[0;32mI (28442) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (28452) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (28452) HID_HOST: Starting open event␛[0m
+␛[0;32mI (28452) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (28462) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (28462) HID_HOST: Starting open event␛[0m
+␛[0;32mI (28472) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (28482) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (28482) HID_HOST: Starting open event␛[0m
+␛[0;32mI (28482) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (28492) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (28492) HID_HOST: Starting open event␛[0m
+␛[0;32mI (28502) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (28502) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (28512) HID_HOST: Starting open event␛[0m
+␛[0;32mI (28512) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (28522) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (28522) HID_HOST: Starting open event␛[0m
+␛[0;32mI (28532) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (28532) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (28542) HID_HOST: Starting open event␛[0m
+␛[0;32mI (28542) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (28552) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (28552) HID_HOST: Starting open event␛[0m
+␛[0;32mI (28562) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (28562) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (28572) HID_HOST: Starting open event␛[0m
+␛[0;32mI (28572) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (28582) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (28582) HID_HOST: Starting open event␛[0m
+␛[0;32mI (28592) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (28592) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (28602) HID_HOST: Starting open event␛[0m
+␛[0;32mI (28602) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (28612) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (28612) HID_HOST: Starting open event␛[0m
+␛[0;32mI (28622) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (28622) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (28632) HID_HOST: Starting open event␛[0m
+␛[0;32mI (28632) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (28642) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (28642) HID_HOST: Starting open event␛[0m
+␛[0;32mI (28652) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (28652) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (28662) HID_HOST: Starting open event␛[0m
+␛[0;32mI (28662) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (28672) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (28672) HID_HOST: Starting open event␛[0m
+␛[0;32mI (28682) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (28682) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (28692) HID_HOST: Starting open event␛[0m
+␛[0;32mI (28692) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (28702) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (28702) HID_HOST: Starting open event␛[0m
+␛[0;32mI (28712) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (28712) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (28722) HID_HOST: Starting open event␛[0m
+␛[0;32mI (28722) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (28732) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (28732) HID_HOST: Starting open event␛[0m
+␛[0;32mI (28742) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (28742) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (28752) HID_HOST: Starting open event␛[0m
+␛[0;32mI (28752) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (28762) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (28762) HID_HOST: Starting open event␛[0m
+␛[0;32mI (28772) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (28772) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (28782) HID_HOST: Starting open event␛[0m
+␛[0;32mI (28782) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (28792) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (28792) HID_HOST: Starting open event␛[0m
+␛[0;32mI (28802) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (28802) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (28812) HID_HOST: Starting open event␛[0m
+␛[0;32mI (28812) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (28822) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (28822) HID_HOST: Starting open event␛[0m
+␛[0;32mI (28832) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (28832) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (28842) HID_HOST: Starting open event␛[0m
+␛[0;32mI (28842) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (28852) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (28852) HID_HOST: Starting open event␛[0m
+␛[0;32mI (28852) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (28862) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (28872) HID_HOST: Starting open event␛[0m
+␛[0;32mI (28872) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (28882) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (28882) HID_HOST: Starting open event␛[0m
+␛[0;32mI (28882) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (28892) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (28892) HID_HOST: Starting open event␛[0m
+␛[0;32mI (28902) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (28912) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (28912) HID_HOST: Starting open event␛[0m
+␛[0;32mI (28912) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (28922) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (28922) HID_HOST: Starting open event␛[0m
+␛[0;32mI (28932) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (28942) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (28942) HID_HOST: Starting open event␛[0m
+␛[0;32mI (28942) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (28952) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (28952) HID_HOST: Starting open event␛[0m
+␛[0;32mI (28962) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (28972) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (28972) HID_HOST: Starting open event␛[0m
+␛[0;32mI (28972) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (28982) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (28982) HID_HOST: Starting open event␛[0m
+␛[0;32mI (28992) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (28992) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (29002) HID_HOST: Starting open event␛[0m
+␛[0;32mI (29002) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (29012) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (29012) HID_HOST: Starting open event␛[0m
+␛[0;32mI (29022) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (29022) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (29032) HID_HOST: Starting open event␛[0m
+␛[0;32mI (29032) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (29042) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (29042) HID_HOST: Starting open event␛[0m
+␛[0;32mI (29052) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (29052) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (29062) HID_HOST: Starting open event␛[0m
+␛[0;32mI (29062) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (29072) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (29072) HID_HOST: Starting open event␛[0m
+␛[0;32mI (29082) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (29082) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (29092) HID_HOST: Starting open event␛[0m
+␛[0;32mI (29092) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (29102) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (29102) HID_HOST: Starting open event␛[0m
+␛[0;32mI (29112) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (29112) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (29122) HID_HOST: Starting open event␛[0m
+␛[0;32mI (29122) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (29132) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (29132) HID_HOST: Starting open event␛[0m
+␛[0;32mI (29142) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (29142) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (29152) HID_HOST: Starting open event␛[0m
+␛[0;32mI (29152) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (29162) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (29162) HID_HOST: Starting open event␛[0m
+␛[0;32mI (29172) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (29172) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (29182) HID_HOST: Starting open event␛[0m
+␛[0;32mI (29182) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (29192) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (29192) HID_HOST: Starting open event␛[0m
+␛[0;32mI (29202) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (29202) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (29212) HID_HOST: Starting open event␛[0m
+␛[0;32mI (29212) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (29222) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (29222) HID_HOST: Starting open event␛[0m
+␛[0;32mI (29232) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (29232) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (29242) HID_HOST: Starting open event␛[0m
+␛[0;32mI (29242) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (29252) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (29252) HID_HOST: Starting open event␛[0m
+␛[0;32mI (29262) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (29262) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (29272) HID_HOST: Starting open event␛[0m
+␛[0;32mI (29272) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (29282) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (29282) HID_HOST: Starting open event␛[0m
+␛[0;32mI (29292) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (29292) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (29302) HID_HOST: Starting open event␛[0m
+␛[0;32mI (29302) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (29312) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (29312) HID_HOST: Starting open event␛[0m
+␛[0;32mI (29312) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (29322) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (29332) HID_HOST: Starting open event␛[0m
+␛[0;32mI (29332) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (29342) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (29342) HID_HOST: Starting open event␛[0m
+␛[0;32mI (29342) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (29352) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (29352) HID_HOST: Starting open event␛[0m
+␛[0;32mI (29362) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (29372) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (29372) HID_HOST: Starting open event␛[0m
+␛[0;32mI (29372) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (29382) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (29382) HID_HOST: Starting open event␛[0m
+␛[0;32mI (29392) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (29402) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (29402) HID_HOST: Starting open event␛[0m
+␛[0;32mI (29402) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (29412) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (29412) HID_HOST: Starting open event␛[0m
+␛[0;32mI (29422) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (29432) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (29432) HID_HOST: Starting open event␛[0m
+␛[0;32mI (29432) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (29442) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (29442) HID_HOST: Starting open event␛[0m
+␛[0;32mI (29452) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (29452) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (29462) HID_HOST: Starting open event␛[0m
+␛[0;32mI (29462) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (29472) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (29472) HID_HOST: Starting open event␛[0m
+␛[0;32mI (29482) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (29482) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (29492) HID_HOST: Starting open event␛[0m
+␛[0;32mI (29492) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (29502) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (29502) HID_HOST: Starting open event␛[0m
+␛[0;32mI (29512) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (29512) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (29522) HID_HOST: Starting open event␛[0m
+␛[0;32mI (29522) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (29532) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (29532) HID_HOST: Starting open event␛[0m
+␛[0;32mI (29542) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (29542) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (29552) HID_HOST: Starting open event␛[0m
+␛[0;32mI (29552) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (29562) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (29562) HID_HOST: Starting open event␛[0m
+␛[0;32mI (29572) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (29572) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (29582) HID_HOST: Starting open event␛[0m
+␛[0;32mI (29582) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (29592) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (29592) HID_HOST: Starting open event␛[0m
+␛[0;32mI (29602) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (29602) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (29612) HID_HOST: Starting open event␛[0m
+␛[0;32mI (29612) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (29622) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (29622) HID_HOST: Starting open event␛[0m
+␛[0;32mI (29632) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (29632) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (29642) HID_HOST: Starting open event␛[0m
+␛[0;32mI (29642) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (29652) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (29652) HID_HOST: Starting open event␛[0m
+␛[0;32mI (29662) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (29662) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (29672) HID_HOST: Starting open event␛[0m
+␛[0;32mI (29672) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (29682) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (29682) HID_HOST: Starting open event␛[0m
+␛[0;32mI (29692) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (29692) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (29702) HID_HOST: Starting open event␛[0m
+␛[0;32mI (29702) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (29712) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (29712) HID_HOST: Starting open event␛[0m
+␛[0;32mI (29722) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (29722) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (29732) HID_HOST: Starting open event␛[0m
+␛[0;32mI (29732) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (29742) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (29742) HID_HOST: Starting open event␛[0m
+␛[0;32mI (29752) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (29752) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (29762) HID_HOST: Starting open event␛[0m
+␛[0;32mI (29762) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (29772) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (29772) HID_HOST: Starting open event␛[0m
+␛[0;32mI (29782) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (29782) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (29792) HID_HOST: Starting open event␛[0m
+␛[0;32mI (29792) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (29802) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (29802) HID_HOST: Starting open event␛[0m
+␛[0;32mI (29802) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (29812) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (29822) HID_HOST: Starting open event␛[0m
+␛[0;32mI (29822) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (29832) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (29832) HID_HOST: Starting open event␛[0m
+␛[0;32mI (29832) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (29842) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (29842) HID_HOST: Starting open event␛[0m
+␛[0;32mI (29852) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (29862) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (29862) HID_HOST: Starting open event␛[0m
+␛[0;32mI (29862) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (29872) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (29872) HID_HOST: Starting open event␛[0m
+␛[0;32mI (29882) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (29892) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (29892) HID_HOST: Starting open event␛[0m
+␛[0;32mI (29892) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (29902) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (29902) HID_HOST: Starting open event␛[0m
+␛[0;32mI (29912) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (29922) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (29922) HID_HOST: Starting open event␛[0m
+␛[0;32mI (29922) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (29932) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (29932) HID_HOST: Starting open event␛[0m
+␛[0;32mI (29942) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (29942) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (29952) HID_HOST: Starting open event␛[0m
+␛[0;32mI (29952) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (29962) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (29962) HID_HOST: Starting open event␛[0m
+␛[0;32mI (29972) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (29972) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (29982) HID_HOST: Starting open event␛[0m
+␛[0;32mI (29982) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (29992) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (29992) HID_HOST: Starting open event␛[0m
+␛[0;32mI (30002) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (30002) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (30012) HID_HOST: Starting open event␛[0m
+␛[0;32mI (30012) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (30022) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (30022) HID_HOST: Starting open event␛[0m
+␛[0;32mI (30032) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (30032) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (30042) HID_HOST: Starting open event␛[0m
+␛[0;32mI (30042) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (30052) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (30052) HID_HOST: Starting open event␛[0m
+␛[0;32mI (30062) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (30062) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (30072) HID_HOST: Starting open event␛[0m
+␛[0;32mI (30072) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (30082) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (30082) HID_HOST: Starting open event␛[0m
+␛[0;32mI (30092) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (30092) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (30102) HID_HOST: Starting open event␛[0m
+␛[0;32mI (30102) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (30112) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (30112) HID_HOST: Starting open event␛[0m
+␛[0;32mI (30122) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (30122) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (30132) HID_HOST: Starting open event␛[0m
+␛[0;32mI (30132) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (30142) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (30142) HID_HOST: Starting open event␛[0m
+␛[0;32mI (30152) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (30152) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (30162) HID_HOST: Starting open event␛[0m
+␛[0;32mI (30162) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (30172) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (30172) HID_HOST: Starting open event␛[0m
+␛[0;32mI (30182) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (30182) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (30192) HID_HOST: Starting open event␛[0m
+␛[0;32mI (30192) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (30202) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (30202) HID_HOST: Starting open event␛[0m
+␛[0;32mI (30212) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (30212) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (30222) HID_HOST: Starting open event␛[0m
+␛[0;32mI (30222) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (30232) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (30232) HID_HOST: Starting open event␛[0m
+␛[0;32mI (30242) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (30242) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (30252) HID_HOST: Starting open event␛[0m
+␛[0;32mI (30252) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (30262) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (30262) HID_HOST: Starting open event␛[0m
+␛[0;32mI (30262) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (30272) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (30282) HID_HOST: Starting open event␛[0m
+␛[0;32mI (30282) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (30292) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (30292) HID_HOST: Starting open event␛[0m
+␛[0;32mI (30292) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (30302) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (30302) HID_HOST: Starting open event␛[0m
+␛[0;32mI (30312) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (30322) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (30322) HID_HOST: Starting open event␛[0m
+␛[0;32mI (30322) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (30332) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (30332) HID_HOST: Starting open event␛[0m
+␛[0;32mI (30342) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (30352) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (30352) HID_HOST: Starting open event␛[0m
+␛[0;32mI (30352) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (30362) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (30362) HID_HOST: Starting open event␛[0m
+␛[0;32mI (30372) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (30382) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (30382) HID_HOST: Starting open event␛[0m
+␛[0;32mI (30382) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (30392) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (30392) HID_HOST: Starting open event␛[0m
+␛[0;32mI (30402) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (30402) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (30412) HID_HOST: Starting open event␛[0m
+␛[0;32mI (30412) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (30422) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (30422) HID_HOST: Starting open event␛[0m
+␛[0;32mI (30432) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (30432) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (30442) HID_HOST: Starting open event␛[0m
+␛[0;32mI (30442) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (30452) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (30452) HID_HOST: Starting open event␛[0m
+␛[0;32mI (30462) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (30462) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (30472) HID_HOST: Starting open event␛[0m
+␛[0;32mI (30472) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (30482) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (30482) HID_HOST: Starting open event␛[0m
+␛[0;32mI (30492) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (30492) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (30502) HID_HOST: Starting open event␛[0m
+␛[0;32mI (30502) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (30512) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (30512) HID_HOST: Starting open event␛[0m
+␛[0;32mI (30522) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (30522) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (30532) HID_HOST: Starting open event␛[0m
+␛[0;32mI (30532) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (30542) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (30542) HID_HOST: Starting open event␛[0m
+␛[0;32mI (30552) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (30552) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (30562) HID_HOST: Starting open event␛[0m
+␛[0;32mI (30562) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (30572) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (30572) HID_HOST: Starting open event␛[0m
+␛[0;32mI (30582) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (30582) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (30592) HID_HOST: Starting open event␛[0m
+␛[0;32mI (30592) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (30602) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (30602) HID_HOST: Starting open event␛[0m
+␛[0;32mI (30612) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (30612) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (30622) HID_HOST: Starting open event␛[0m
+␛[0;32mI (30622) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (30632) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (30632) HID_HOST: Starting open event␛[0m
+␛[0;32mI (30642) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (30642) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (30652) HID_HOST: Starting open event␛[0m
+␛[0;32mI (30652) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (30662) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (30662) HID_HOST: Starting open event␛[0m
+␛[0;32mI (30672) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (30672) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (30682) HID_HOST: Starting open event␛[0m
+␛[0;32mI (30682) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (30692) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (30692) HID_HOST: Starting open event␛[0m
+␛[0;32mI (30702) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (30702) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (30712) HID_HOST: Starting open event␛[0m
+␛[0;32mI (30712) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (30722) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (30722) HID_HOST: Starting open event␛[0m
+␛[0;32mI (30732) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (30732) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (30742) HID_HOST: Starting open event␛[0m
+␛[0;32mI (30742) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (30752) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (30752) HID_HOST: Starting open event␛[0m
+␛[0;32mI (30752) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (30762) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (30772) HID_HOST: Starting open event␛[0m
+␛[0;32mI (30772) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (30782) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (30782) HID_HOST: Starting open event␛[0m
+␛[0;32mI (30782) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (30792) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (30792) HID_HOST: Starting open event␛[0m
+␛[0;32mI (30802) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (30812) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (30812) HID_HOST: Starting open event␛[0m
+␛[0;32mI (30812) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (30822) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (30822) HID_HOST: Starting open event␛[0m
+␛[0;32mI (30832) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (30842) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (30842) HID_HOST: Starting open event␛[0m
+␛[0;32mI (30842) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (30852) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (30852) HID_HOST: Starting open event␛[0m
+␛[0;32mI (30862) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (30872) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (30872) HID_HOST: Starting open event␛[0m
+␛[0;32mI (30872) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (30882) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (30882) HID_HOST: Starting open event␛[0m
+␛[0;32mI (30892) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (30892) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (30902) HID_HOST: Starting open event␛[0m
+␛[0;32mI (30902) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (30912) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (30912) HID_HOST: Starting open event␛[0m
+␛[0;32mI (30922) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (30922) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (30932) HID_HOST: Starting open event␛[0m
+␛[0;32mI (30932) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (30942) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (30942) HID_HOST: Starting open event␛[0m
+␛[0;32mI (30952) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (30952) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (30962) HID_HOST: Starting open event␛[0m
+␛[0;32mI (30962) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (30972) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (30972) HID_HOST: Starting open event␛[0m
+␛[0;32mI (30982) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (30982) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (30992) HID_HOST: Starting open event␛[0m
+␛[0;32mI (30992) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (31002) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (31002) HID_HOST: Starting open event␛[0m
+␛[0;32mI (31012) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (31012) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (31022) HID_HOST: Starting open event␛[0m
+␛[0;32mI (31022) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (31032) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (31032) HID_HOST: Starting open event␛[0m
+␛[0;32mI (31042) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (31042) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (31052) HID_HOST: Starting open event␛[0m
+␛[0;32mI (31052) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (31062) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (31062) HID_HOST: Starting open event␛[0m
+␛[0;32mI (31072) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (31072) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (31082) HID_HOST: Startin␛[0;31mE (31082) task_wdt: Task watchdog got triggered. The following tasks did not reset the watchdog in time:␛[0m
+␛[0;31mE (31082) task_wdt:  - IDLE1 (CPU 1)␛[0m
+␛[0;31mE (31082) task_wdt: Tasks currently running:␛[0m
+␛[0;31mE (31082) task_wdt: CPU 0: IDLE0␛[0m
+␛[0;31mE (31082) task_wdt: CPU 1: esp_bt_hidh_eve␛[0m
+␛[0;31mE (31082) task_wdt: Print CPU 0 (current core) backtrace␛[0m
+
+
+Backtrace:0x4012C633:0x3FFBE370 0x40082675:0x3FFBE390 0x40164F9B:0x3FFBCDC0 0x4012C9A7:0x3FFBCDE0 0x4008F811:0x3FFBCE00 0x4008EDA1:0x3FFBCE20
+
+␛[0;31mE (31082) task_wdt: Print CPU 1 backtrace␛[0m
+
+
+Backtrace:0x40081733:0x3FFBE970 0x40082675:0x3FFBE990 0x401323B1:0x3FFDA160 0x401330F2:0x3FFDA180 0x40131FA5:0x3FFDA1A0 0x4000BD83:0x3FFDA1C0 0x4000117D:0x3FFDA1E0 0x400592FE:0x3FFDA200 0x4005937A:0x3FFDA220 0x40058BBF:0x3FFDA240 0x4015674B:0x3FFDA270 0x4015BD2F:0x3FFDA2A0 0x4015BEB1:0x3FFDA5B0 0x40165BB1:0x3FFDA5E0 0x40092625:0x3FFDA610 0x400D2B53:0x3FFDA660 0x401658C9:0x3FFDA6B0 0x4016551A:0x3FFDA6E0 0x401655F5:0x3FFDA720 0x4008EDA1:0x3FFDA740
+
+g open event␛[0m
+␛[0;32mI (31172) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (31182) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (31182) HID_HOST: Starting open event␛[0m
+␛[0;32mI (31192) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (31192) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (31202) HID_HOST: Starting open event␛[0m
+␛[0;32mI (31202) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (31212) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (31212) HID_HOST: Starting open event␛[0m
+␛[0;32mI (31222) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (31222) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (31232) HID_HOST: Starting open event␛[0m
+␛[0;32mI (31232) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (31242) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (31242) HID_HOST: Starting open event␛[0m
+␛[0;32mI (31252) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (31252) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (31262) HID_HOST: Starting open event␛[0m
+␛[0;32mI (31262) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (31272) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (31272) HID_HOST: Starting open event␛[0m
+␛[0;32mI (31282) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (31282) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (31292) HID_HOST: Starting open event␛[0m
+␛[0;32mI (31292) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (31302) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (31302) HID_HOST: Starting open event␛[0m
+␛[0;32mI (31312) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (31312) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (31322) HID_HOST: Starting open event␛[0m
+␛[0;32mI (31322) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (31332) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (31332) HID_HOST: Starting open event␛[0m
+␛[0;32mI (31342) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (31342) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (31352) HID_HOST: Starting open event␛[0m
+␛[0;32mI (31352) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (31362) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (31362) HID_HOST: Starting open event␛[0m
+␛[0;32mI (31372) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (31372) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (31382) HID_HOST: Starting open event␛[0m
+␛[0;32mI (31382) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (31392) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (31392) HID_HOST: Starting open event␛[0m
+␛[0;32mI (31402) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (31402) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (31412) HID_HOST: Starting open event␛[0m
+␛[0;32mI (31412) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (31422) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (31422) HID_HOST: Starting open event␛[0m
+␛[0;32mI (31432) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (31432) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (31442) HID_HOST: Starting open event␛[0m
+␛[0;32mI (31442) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (31452) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (31452) HID_HOST: Starting open event␛[0m
+␛[0;32mI (31452) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (31462) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (31472) HID_HOST: Starting open event␛[0m
+␛[0;32mI (31472) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (31482) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (31482) HID_HOST: Starting open event␛[0m
+␛[0;32mI (31482) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (31492) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (31492) HID_HOST: Starting open event␛[0m
+␛[0;32mI (31502) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (31512) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (31512) HID_HOST: Starting open event␛[0m
+␛[0;32mI (31512) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (31522) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (31522) HID_HOST: Starting open event␛[0m
+␛[0;32mI (31532) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (31542) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (31542) HID_HOST: Starting open event␛[0m
+␛[0;32mI (31542) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (31552) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (31552) HID_HOST: Starting open event␛[0m
+␛[0;32mI (31562) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (31572) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (31572) HID_HOST: Starting open event␛[0m
+␛[0;32mI (31572) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (31582) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (31582) HID_HOST: Starting open event␛[0m
+␛[0;32mI (31592) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (31592) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (31602) HID_HOST: Starting open event␛[0m
+␛[0;32mI (31602) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (31612) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (31612) HID_HOST: Starting open event␛[0m
+␛[0;32mI (31622) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (31622) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (31632) HID_HOST: Starting open event␛[0m
+␛[0;32mI (31632) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (31642) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (31642) HID_HOST: Starting open event␛[0m
+␛[0;32mI (31652) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (31652) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (31662) HID_HOST: Starting open event␛[0m
+␛[0;32mI (31662) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (31672) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (31672) HID_HOST: Starting open event␛[0m
+␛[0;32mI (31682) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (31682) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (31692) HID_HOST: Starting open event␛[0m
+␛[0;32mI (31692) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (31702) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (31702) HID_HOST: Starting open event␛[0m
+␛[0;32mI (31712) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (31712) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (31722) HID_HOST: Starting open event␛[0m
+␛[0;32mI (31722) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (31732) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (31732) HID_HOST: Starting open event␛[0m
+␛[0;32mI (31742) HID_HOST: 94:58:cb:ca:da:b8 Device not registered: ␛[0m
+␛[0;32mI (31742) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (31752) HID_HOST: Starting open event␛[0m

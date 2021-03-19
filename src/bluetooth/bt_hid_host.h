@@ -15,7 +15,7 @@
 
 #define HIDH_TAG "HID_HOST"
 
-typedef void (*HidInputDeviceConnectedCallback)(const esp_hid_device_config_t *connected_device);
+typedef void (*HidInputDeviceConnectedCallback)(esp_hidh_dev_t *connected_device, const esp_hid_device_config_t *device_info);
 typedef void (*HidInputDeviceDisconnectedCallback)(esp_hidh_dev_t *disconnected_device);
 
 class BtHidHost {

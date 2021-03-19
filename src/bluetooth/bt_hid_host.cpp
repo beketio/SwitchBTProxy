@@ -6,7 +6,7 @@ HidInputDeviceConnectedCallback BtHidHost::_connected_callback;
 HidInputDeviceDisconnectedCallback BtHidHost::_disconnected_callback;
 
 void BtHidHost::hidCallback(void* event_handler_arg, esp_event_base_t event_base, int32_t event_id, void* event_data) {
-    ESP_LOGI(HIDH_TAG, "HID Event: %d", event_id);
+    // ESP_LOGI(HIDH_TAG, "HID Event: %d", event_id);
     // Get event id and data
     esp_hidh_event_t event = (esp_hidh_event_t) event_id;
     esp_hidh_event_data_t *param = (esp_hidh_event_data_t *) event_data;
@@ -17,7 +17,6 @@ void BtHidHost::hidCallback(void* event_handler_arg, esp_event_base_t event_base
     if(device_id == NULL)
         ESP_LOGI(TAG, "Null device id");
 
-    ESP_LOGI(TAG, "Starting open event");
     if(event == ESP_HIDH_OPEN_EVENT) {
         const esp_hid_device_config_t *config = esp_hidh_dev_config_get(param->open.dev);
         ESP_LOGI(TAG, "got config");
@@ -34,7 +33,7 @@ void BtHidHost::hidCallback(void* event_handler_arg, esp_event_base_t event_base
         
         // Notify conencted device callback
         if(_connected_callback)
-            _connected_callback(config);
+            _connected_callback(device_id, config);
         else
             ESP_LOGW(HIDH_TAG, "No connected HID device callback specified");
         return;
@@ -65,10 +64,10 @@ void BtHidHost::hidCallback(void* event_handler_arg, esp_event_base_t event_base
         device->onBatteryEvent(param->battery.level);
     } 
     else if(event == ESP_HIDH_INPUT_EVENT) {
-        device->onInputEvent(param->input.data, param->input.length);
+        device->onInputEvent(param->input.report_id, param->input.data, param->input.length);
     }
     else if(event == ESP_HIDH_FEATURE_EVENT) {
-        device->onFeatureEvent(param->input.data, param->input.length);
+        device->onFeatureEvent(param->input.report_id, param->input.data, param->input.length);
     }
     else {
         ESP_LOGE(HIDH_TAG, "Unhandled event: %d", event);

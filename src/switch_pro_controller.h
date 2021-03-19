@@ -38,8 +38,8 @@ class SwitchProController: public Gamepad, public BtHidInputDevice {
 
 public:
     SwitchProController(esp_hidh_dev_t *hid_device_id);
-    void onInputEvent(uint8_t *data, uint16_t length);
-    void onFeatureEvent(uint8_t *data, uint16_t length);
+    void onInputEvent(uint8_t report_id, uint8_t *data, uint16_t length);
+    void onFeatureEvent(uint8_t report_id, uint8_t *data, uint16_t length);
 
 private:
     void ReceiveBtData(uint8_t *data);

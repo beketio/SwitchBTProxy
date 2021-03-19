@@ -8,6 +8,7 @@
 #include "esp_log.h"
 #include "esp_gap_ble_api.h"
 
+#include "vendor_product_ids.h"
 #include "bluetooth/bt_gap.h"
 #include "bluetooth/bt_hid_host.h"
 #include "gamepad.h"
@@ -35,17 +36,22 @@ void deviceFoundCallback(BtGap::bt_discovered_device *device) {
     }
 }
 
-void hidInputDeviceConnectedCallback(const esp_hid_device_config_t *connected_device) {
+void hidInputDeviceConnectedCallback(esp_hidh_dev_t *connected_device, const esp_hid_device_config_t *device_info) {
     ESP_LOGI(MAIN_TAG, "HID Device connected:");
-    if(connected_device->device_name)
-        ESP_LOGI(MAIN_TAG, " -- Manufacturer: %s", connected_device->device_name);
-    if(connected_device->manufacturer_name)
-        ESP_LOGI(MAIN_TAG, " -- Manufacturer: %s", connected_device->manufacturer_name);
-    ESP_LOGI(MAIN_TAG, " -- Product ID: %d", connected_device->product_id);
-    ESP_LOGI(MAIN_TAG, " -- Vender ID: %d", connected_device->vendor_id);
-    if(connected_device->serial_number)
-        ESP_LOGI(MAIN_TAG, " -- Serial: %s", connected_device->serial_number);
-    ESP_LOGI(MAIN_TAG, " -- Version: %d", connected_device->version);
+    if(device_info->device_name)
+        ESP_LOGI(MAIN_TAG, " -- Manufacturer: %s", device_info->device_name);
+    if(device_info->manufacturer_name)
+        ESP_LOGI(MAIN_TAG, " -- Manufacturer: %s", device_info->manufacturer_name);
+    ESP_LOGI(MAIN_TAG, " -- Product ID: %d", device_info->product_id);
+    ESP_LOGI(MAIN_TAG, " -- Vender ID: %d", device_info->vendor_id);
+    if(device_info->serial_number)
+        ESP_LOGI(MAIN_TAG, " -- Serial: %s", device_info->serial_number);
+    ESP_LOGI(MAIN_TAG, " -- Version: %d", device_info->version);
+
+    if(device_info->vendor_id == VID_NINTENDO && device_info->product_id == PID_NINTENDO_PRO_CONTROLLER) {
+        SwitchProController *controller = new SwitchProController(connected_device);
+        BtHidHost::registerInputDevice(controller);
+    }
 }
 
 void hidInputDeviceDisconnectedCallback(esp_hidh_dev_t *disconnected_device) {
@@ -73,9 +79,9 @@ void app_main(void)
 
     ESP_LOGI(MAIN_TAG, "Discovering...");
     BtGap::setDeviceFoundCallback(deviceFoundCallback);
-    BtGap::startDiscovery(10, false);
+    //BtGap::startDiscovery(10, true);
 
-    BtHidHost::connect(*discovered_addr);
+    //BtHidHost::connect(*discovered_addr);
     ESP_LOGI(MAIN_TAG, "Connected to HID Device");
 
 

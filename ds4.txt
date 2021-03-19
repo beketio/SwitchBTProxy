@@ -1,0 +1,632 @@
+
+CONFIGURATION: https://docs.platformio.org/page/boards/espressif32/nodemcu-32s.html
+PLATFORM: Espressif 32 (3.1.0) > NodeMCU-32S
+HARDWARE: ESP32 240MHz, 320KB RAM, 4MB Flash
+DEBUG: Current (esp-prog) External (esp-prog, iot-bus-jtag, jlink, minimodule, olimex-arm-usb-ocd, olimex-arm-usb-ocd-h, olimex-arm-usb-tiny-h, olimex-jtag-tiny, tumpa)
+PACKAGES:
+ - framework-espidf 3.40200.210118 (4.2.0)
+ - tool-cmake 3.16.4
+ - tool-esptoolpy 1.30000.201119 (3.0.0)
+ - tool-idf 1.0.1
+ - tool-mconf 1.4060000.20190628 (406.0.0)
+ - tool-mkspiffs 2.230.0 (2.30)
+ - tool-ninja 1.9.0
+ - toolchain-esp32ulp 1.22851.191205 (2.28.51)
+ - toolchain-xtensa32 2.80400.210211 (8.4.0)
+Reading CMake configuration...
+LDF: Library Dependency Finder -> http://bit.ly/configure-pio-ldf
+LDF Modes: Finder ~ chain, Compatibility ~ soft
+Found 1 compatible libraries
+Scanning dependencies...
+No dependencies
+Building in release mode
+Compiling .pio\build\nodemcu-32s-win\src\bluetooth\bt_gap.o
+Compiling .pio\build\nodemcu-32s-win\src\bluetooth\bt_hid_host.o
+Compiling .pio\build\nodemcu-32s-win\src\main.o
+Compiling .pio\build\nodemcu-32s-win\app_update\esp_app_desc.o
+Archiving .pio\build\nodemcu-32s-win\esp-idf\app_update\libapp_update.a
+Generating project linker script .pio\build\nodemcu-32s-win\esp32.project.ld
+Linking .pio\build\nodemcu-32s-win\firmware.elf
+Building .pio\build\nodemcu-32s-win\firmware.bin
+Retrieving maximum program size .pio\build\nodemcu-32s-win\firmware.elf
+Checking size .pio\build\nodemcu-32s-win\firmware.elf
+Advanced Memory Usage is available via "PlatformIO Home > Project Inspect"
+RAM:   [==        ]  19.6% (used 64212 bytes from 327680 bytes)
+Flash: [========  ]  84.0% (used 880944 bytes from 1048576 bytes)
+esptool.py v3.0
+Configuring upload protocol...
+AVAILABLE: esp-prog, espota, esptool, iot-bus-jtag, jlink, minimodule, olimex-arm-usb-ocd, olimex-arm-usb-ocd-h, olimex-arm-usb-tiny-h, olimex-jtag-tiny, tumpa
+CURRENT: upload_protocol = esptool
+Looking for upload port...
+Use manually specified: COM4
+Uploading .pio\build\nodemcu-32s-win\firmware.bin
+esptool.py v3.0
+Serial port COM4
+Connecting....
+Chip is ESP32-D0WDQ6 (revision 1)
+Features: WiFi, BT, Dual Core, 240MHz, VRef calibration in efuse, Coding Scheme None
+Crystal is 40MHz
+MAC: 24:6f:28:0b:7f:b4
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Auto-detected Flash size: 4MB
+Compressed 25168 bytes to 15297...
+Writing at 0x00001000... (100 %)
+Wrote 25168 bytes (15297 compressed) at 0x00001000 in 0.3 seconds (effective 576.9 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 103...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (103 compressed) at 0x00008000 in 0.0 seconds (effective 2457.2 kbit/s)...
+Hash of data verified.
+Compressed 881056 bytes to 523311...
+Writing at 0x00010000... (3 %)
+Writing at 0x00014000... (6 %)
+Writing at 0x00018000... (9 %)
+Writing at 0x0001c000... (12 %)
+Writing at 0x00020000... (15 %)
+Writing at 0x00024000... (18 %)
+Writing at 0x00028000... (21 %)
+Writing at 0x0002c000... (25 %)
+Writing at 0x00030000... (28 %)
+Writing at 0x00034000... (31 %)
+Writing at 0x00038000... (34 %)
+Writing at 0x0003c000... (37 %)
+Writing at 0x00040000... (40 %)
+Writing at 0x00044000... (43 %)
+Writing at 0x00048000... (46 %)
+Writing at 0x0004c000... (50 %)
+Writing at 0x00050000... (53 %)
+Writing at 0x00054000... (56 %)
+Writing at 0x00058000... (59 %)
+Writing at 0x0005c000... (62 %)
+Writing at 0x00060000... (65 %)
+Writing at 0x00064000... (68 %)
+Writing at 0x00068000... (71 %)
+Writing at 0x0006c000... (75 %)
+Writing at 0x00070000... (78 %)
+Writing at 0x00074000... (81 %)
+Writing at 0x00078000... (84 %)
+Writing at 0x0007c000... (87 %)
+Writing at 0x00080000... (90 %)
+Writing at 0x00084000... (93 %)
+Writing at 0x00088000... (96 %)
+Writing at 0x0008c000... (100 %)
+Wrote 881056 bytes (523311 compressed) at 0x00010000 in 12.0 seconds (effective 585.0 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...
+============================================================================================================================================ [SUCCESS] Took 51.65 seconds ============================================================================================================================================
+--- Available filters and text transformations: colorize, debug, default, direct, esp32_exception_decoder, hexlify, log2file, nocontrol, printable, send_on_enter, time
+--- More details at http://bit.ly/pio-monitor-filters
+--- Miniterm on COM4  115200,8,N,1 ---
+--- Quit: Ctrl+C | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---
+ets Jun  48) boot.esp32: SPI Speed      : 40MHz␛[0m
+␛[0;32mI (48) boot.esp32: SPI Mode       : DIO␛[0m
+␛[0;32mI (49) boot.esp32: SPI Flash Size : 4MB␛[0m
+␛[0;32mI (53) boot: Enabling RNG early entropy source...␛[0m
+␛[0;32mI (59) boot: Partition Table:␛[0m
+␛[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length␛[0m
+␛[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000␛[0m
+␛[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000␛[0m
+␛[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000␛[0m
+␛[0;32mI (92) boot: End of partition table␛[0m
+␛[0;32mI (96) boot_comm: chip revision: 1, min. application chip revision: 0␛[0m
+␛[0;32mI (103) esp_image: segment 0: paddr=0x00010020 vaddr=0x3f400020 size=0x28ccc (167116) map␛[0m
+␛[0;32mI (176) esp_image: segment 1: paddr=0x00038cf4 vaddr=0x3ffbdb60 size=0x033bc ( 13244) load␛[0m
+␛[0;32mI (182) esp_image: segment 2: paddr=0x0003c0b8 vaddr=0x40080000 size=0x00404 (  1028) load␛[0m
+␛[0;32mI (183) esp_image: segment 3: paddr=0x0003c4c4 vaddr=0x40080404 size=0x03b54 ( 15188) load␛[0m
+␛[0;32mI (198) esp_image: segment 4: paddr=0x00040020 vaddr=0x400d0020 size=0x95c88 (613512) map␛[0m
+␛[0;32mI (434) esp_image: segment 5: paddr=0x000d5cb0 vaddr=0x40083f58 size=0x114cc ( 70860) load␛[0m
+␛[0;32mI (477) boot: Loaded app from partition at offset 0x10000␛[0m
+␛[0;32mI (477) boot: Disabling RNG early entropy source...␛[0m
+␛[0;32mI (478) cpu_start: Pro cpu up.␛[0m
+␛[0;32mI (481) cpu_start: Application information:␛[0m
+␛[0;32mI (486) cpu_start: Project name:     SwitchProxy␛[0m
+␛[0;32mI (491) cpu_start: App version:      db55f75␛[0m
+␛[0;32mI (496) cpu_start: Compile time:     Mar 18 2021 21:39:57␛[0m
+␛[0;32mI (502) cpu_start: ELF file SHA256:  512700c9036e37c7...␛[0m
+␛[0;32mI (508) cpu_start: ESP-IDF:          3.40200.210118␛[0m
+␛[0;32mI (514) cpu_start: Starting app cpu, entry point is 0x40081480␛[0m
+␛[0;32mI (0) cpu_start: App cpu up.␛[0m
+␛[0;32mI (524) heap_init: Initializing. RAM available for dynamic allocation:␛[0m
+␛[0;32mI (531) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM␛[0m
+␛[0;32mI (537) heap_init: At 3FFB7468 len 00000B98 (2 KiB): DRAM␛[0m
+␛[0;32mI (543) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM␛[0m
+␛[0;32mI (549) heap_init: At 3FFCD638 len 000129C8 (74 KiB): DRAM␛[0m
+␛[0;32mI (556) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM␛[0m
+␛[0;32mI (562) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM␛[0m
+␛[0;32mI (568) heap_init: At 40095424 len 0000ABDC (42 KiB): IRAM␛[0m
+␛[0;32mI (574) cpu_start: Pro cpu start user code␛[0m
+␛[0;32mI (593) spi_flash: detected chip: generic␛[0m
+␛[0;32mI (594) spi_flash: flash io: dio␛[0m
+␛[0;32mI (594) cpu_start: Starting scheduler on PRO CPU.␛[0m
+␛[0;32mI (0) cpu_start: Starting scheduler on APP CPU.␛[0m
+␛[0;32mI (602) MAIN: Hello world!␛[0m
+␛[0;32mI (612) GAP: Starting Bluetooth...␛[0m
+␛[0;32mI (612) GAP: initialize controller...␛[0m
+␛[0;32mI (612) BTDM_INIT: BT controller compile version [3723d5b]␛[0m
+␛[0;32mI (622) system_api: Base MAC address is not set␛[0m
+␛[0;32mI (622) system_api: read default base MAC address from EFUSE␛[0m
+␛[0;32mI (632) GAP: enable controller...␛[0m
+␛[0;32mI (742) phy: phy_version: 4500, 0cd6843, Sep 17 2020, 15:37:07, 0, 0␛[0m
+␛[0;32mI (1212) GAP: initialize bluedroid...␛[0m
+␛[0;32mI (1232) GAP: enable bluedroid...␛[0m
+␛[0;32mI (1352) MAIN: Bluetooth started␛[0m
+␛[0;32mI (1352) MAIN: Starting HID Host...␛[0m
+␛[0;32mI (1362) MAIN: HID Host started...␛[0m
+␛[0;32mI (1362) MAIN: Discovering...␛[0m
+␛[0;32mI (1362) GAP: GAP callback 1␛[0m
+␛[0;32mI (1362) GAP: Discovery started.␛[0m
+␛[0;32mI (1622) GAP: GAP callback 0␛[0m
+␛[0;32mI (1622) GAP: Device found: 00:04:4b:82:73:77␛[0m
+␛[0;32mI (1622) GAP: --Class of Device: 0x280424␛[0m
+␛[0;32mI (1622) GAP: --RSSI: -86␛[0m
+␛[0;32mI (8422) GAP: GAP callback 0␛[0m
+␛[0;32mI (8422) GAP: Device found: 00:04:4b:82:73:77␛[0m
+␛[0;32mI (8422) GAP: --Class of Device: 0x280424␛[0m
+␛[0;32mI (8422) GAP: --RSSI: -100␛[0m
+␛[0;32mI (9322) GAP: GAP callback 0␛[0m
+␛[0;32mI (9322) GAP: Device found: 00:04:4b:82:73:77␛[0m
+␛[0;32mI (9322) GAP: --Class of Device: 0x280424␛[0m
+␛[0;32mI (9332) GAP: --RSSI: -84␛[0m
+␛[0;32mI (9692) GAP: GAP callback 0␛[0m
+␛[0;32mI (9692) GAP: Device found: 00:04:4b:82:73:77␛[0m
+␛[0;32mI (9692) GAP: --Class of Device: 0x280424␛[0m
+␛[0;32mI (9702) GAP: --RSSI: -83␛[0m
+␛[0;32mI (12152) GAP: GAP callback 0␛[0m
+␛[0;32mI (12152) GAP: Device found: 00:04:4b:82:73:77␛[0m
+␛[0;32mI (12152) GAP: --Class of Device: 0x280424␛[0m
+␛[0;32mI (12152) GAP: --RSSI: -97␛[0m
+␛[0;32mI (12792) GAP: GAP callback 0␛[0m
+␛[0;32mI (12792) GAP: Device found: 00:04:4b:82:73:77␛[0m
+␛[0;32mI (12792) GAP: --Class of Device: 0x280424␛[0m
+␛[0;32mI (12792) GAP: --RSSI: -96␛[0m
+␛[0;32mI (12872) GAP: GAP callback 0␛[0m
+␛[0;32mI (12872) GAP: Device found: 00:04:4b:82:73:77␛[0m
+␛[0;32mI (12872) GAP: --Class of Device: 0x280424␛[0m
+␛[0;32mI (12872) GAP: --RSSI: -94␛[0m
+␛[0;32mI (14172) GAP: GAP callback 1␛[0m
+␛[0;32mI (14172) GAP: Device discovery stopped.␛[0m
+␛[0;32mI (14172) MAIN: Connected to HID Device␛[0m
+␛[0;31mE (24412) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (24412) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (24412) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (24422) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (24422) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (24432) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (24432) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (24442) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (24442) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (24442) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (24452) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (24462) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (24462) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (24472) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (24472) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (24472) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (24482) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (24482) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (24492) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (24492) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (24502) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (24502) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (24512) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (24512) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (24522) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (24522) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (24532) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;33mW (24532) BT_SDP: process_service_attr_rsp
+␛[0m
+␛[0;31mE (24542) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (24542) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (24552) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (24552) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (24562) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (24562) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (24572) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (24582) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (24582) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (24582) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (24582) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (24592) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (24592) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (24602) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (24602) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (24612) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (24612) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (24622) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (24622) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (24632) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (24632) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (24642) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (24642) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (24652) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (24652) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (24662) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (24662) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (24672) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (24672) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (24682) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (24682) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (24692) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (24692) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (24702) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (24702) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (24712) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (24712) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (24722) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (24722) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (24732) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (24732) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (24742) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (24742) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (24742) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (24752) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (24752) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (24762) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (24762) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (24772) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (24772) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (24782) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (24782) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (24792) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (24792) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (24802) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (24802) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (24812) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (24812) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (24822) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (24822) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (24832) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (24832) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (24842) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (24842) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (24852) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (24852) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (24862) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (24862) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (24872) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (24872) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (24882) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (24882) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (24892) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (24892) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (24902) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (24902) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (24912) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (24922) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (24922) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (24922) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (24922) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (24932) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (24932) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (24942) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (24942) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (24952) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (24952) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (24962) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (24962) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (24972) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (24972) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (24982) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (24982) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (24992) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (24992) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (25002) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (25002) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (25012) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (25012) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (25022) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (25022) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (25032) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (25032) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (25042) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (25042) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (25052) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (25052) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (25062) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (25062) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (25072) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (25072) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (25082) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (25082) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (25092) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (25092) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (25092) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (25102) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (25102) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (25112) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (25112) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (25122) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (25122) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (25132) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (25142) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (25142) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (25142) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (25152) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (25152) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (25162) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (25162) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (25172) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (25172) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (25182) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (25182) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (25192) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (25192) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (25202) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (25202) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (25212) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (25212) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (25222) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (25222) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (25232) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (25232) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (25242) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (25242) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (25252) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (25252) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (25262) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (25262) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (25272) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (25272) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (25272) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (25282) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (25282) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (25292) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (25292) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (25302) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (25302) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (25312) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (25312) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (25322) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (25322) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (25332) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (25332) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (25342) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (25342) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (25352) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (25352) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (25362) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (25362) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (25372) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (25372) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (25382) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (25382) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (25392) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (25392) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;33mW (25402) BT_SDP: process_service_attr_rsp
+␛[0m
+␛[0;31mE (25412) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (25412) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (25412) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (25422) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (25422) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (25432) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (25432) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (25442) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (25442) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (25452) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (25452) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (25452) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (25462) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (25462) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (25472) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (25472) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (25482) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (25482) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (25492) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (25492) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (25502) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (25502) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (25512) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (25512) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (25522) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (25522) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (25532) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (25532) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (25542) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (25542) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (25552) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;31mE (25552) BT_APPL: wrong device handle: [0]␛[0m
+␛[0;32mI (25562) BT_HIDH: Device Not Found? It's probably a reconnect.␛[0m
+␛[0;31mE (25572) BT_HIDH: Report Not Found: 1 mode: REPORT␛[0m
+␛[0;31mE (25572) BT_HIDH: Report Not Found: 1 mode: REPORT␛[0m
+␛[0;32mI (25582) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (25582) HID_HOST: Starting open event␛[0m
+␛[0;32mI (25582) HID_HOST: 1c:66:6d:07:b2:c2 Device not registered: ␛[0m
+␛[0;32mI (25592) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (25592) HID_HOST: Starting open event␛[0m
+␛[0;32mI (25602) HID_HOST: 1c:66:6d:07:b2:c2 Device not registered: ␛[0m
+␛[0;32mI (25602) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (25612) HID_HOST: Starting open event␛[0m
+␛[0;32mI (25612) HID_HOST: 1c:66:6d:07:b2:c2 Device not registered: ␛[0m
+␛[0;32mI (25622) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (25622) HID_HOST: Starting open event␛[0m
+␛[0;32mI (25632) HID_HOST: 1c:66:6d:07:b2:c2 Device not registered: ␛[0m
+␛[0;32mI (25632) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (25642) HID_HOST: Starting open event␛[0m
+␛[0;32mI (25642) HID_HOST: 1c:66:6d:07:b2:c2 Device not registered: ␛[0m
+␛[0;32mI (25652) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (25652) HID_HOST: Starting open event␛[0m
+␛[0;32mI (25662) HID_HOST: 1c:66:6d:07:b2:c2 Device not registered: ␛[0m
+␛[0;32mI (25662) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (25672) HID_HOST: Starting open event␛[0m
+␛[0;32mI (25672) HID_HOST: 1c:66:6d:07:b2:c2 Device not registered: ␛[0m
+␛[0;32mI (25682) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (25682) HID_HOST: Starting open event␛[0m
+␛[0;32mI (25692) HID_HOST: 1c:66:6d:07:b2:c2 Device not registered: ␛[0m
+␛[0;32mI (25692) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (25702) HID_HOST: Starting open event␛[0m
+␛[0;32mI (25702) HID_HOST: 1c:66:6d:07:b2:c2 Device not registered: ␛[0m
+␛[0;32mI (25712) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (25712) HID_HOST: Starting open event␛[0m
+␛[0;32mI (25722) HID_HOST: 1c:66:6d:07:b2:c2 Device not registered: ␛[0m
+␛[0;32mI (25722) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (25732) HID_HOST: Starting open event␛[0m
+␛[0;32mI (25732) HID_HOST: 1c:66:6d:07:b2:c2 Device not registered: ␛[0m
+␛[0;32mI (25742) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (25742) HID_HOST: Starting open event␛[0m
+␛[0;32mI (25752) HID_HOST: 1c:66:6d:07:b2:c2 Device not registered: ␛[0m
+␛[0;32mI (25752) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (25762) HID_HOST: Starting open event␛[0m
+␛[0;32mI (25762) HID_HOST: 1c:66:6d:07:b2:c2 Device not registered: ␛[0m
+␛[0;32mI (25772) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (25772) HID_HOST: Starting open event␛[0m
+␛[0;32mI (25782) HID_HOST: 1c:66:6d:07:b2:c2 Device not registered: ␛[0m
+␛[0;32mI (25782) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (25792) HID_HOST: Starting open event␛[0m
+␛[0;32mI (25792) HID_HOST: 1c:66:6d:07:b2:c2 Device not registered: ␛[0m
+␛[0;32mI (25802) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (25802) HID_HOST: Starting open event␛[0m
+␛[0;32mI (25812) HID_HOST: 1c:66:6d:07:b2:c2 Device not registered: ␛[0m
+␛[0;32mI (25812) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (25822) HID_HOST: Starting open event␛[0m
+␛[0;32mI (25822) HID_HOST: 1c:66:6d:07:b2:c2 Device not registered: ␛[0m
+␛[0;32mI (25832) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (25832) HID_HOST: Starting open event␛[0m
+␛[0;32mI (25842) HID_HOST: 1c:66:6d:07:b2:c2 Device not registered: ␛[0m
+␛[0;32mI (25842) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (25852) HID_HOST: Starting open event␛[0m
+␛[0;32mI (25852) HID_HOST: 1c:66:6d:07:b2:c2 Device not registered: ␛[0m
+␛[0;32mI (25862) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (25862) HID_HOST: Starting open event␛[0m
+␛[0;32mI (25862) HID_HOST: 1c:66:6d:07:b2:c2 Device not registered: ␛[0m
+␛[0;32mI (25872) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (25882) HID_HOST: Starting open event␛[0m
+␛[0;32mI (25882) HID_HOST: 1c:66:6d:07:b2:c2 Device not registered: ␛[0m
+␛[0;32mI (25892) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (25892) HID_HOST: Starting open event␛[0m
+␛[0;32mI (25892) HID_HOST: 1c:66:6d:07:b2:c2 Device not registered: ␛[0m
+␛[0;32mI (25902) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (25902) HID_HOST: Starting open event␛[0m
+␛[0;32mI (25912) HID_HOST: 1c:66:6d:07:b2:c2 Device not registered: ␛[0m
+␛[0;32mI (25922) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (25922) HID_HOST: Starting open event␛[0m
+␛[0;32mI (25922) HID_HOST: 1c:66:6d:07:b2:c2 Device not registered: ␛[0m
+␛[0;32mI (25932) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (25932) HID_HOST: Starting open event␛[0m
+␛[0;32mI (25942) HID_HOST: 1c:66:6d:07:b2:c2 Device not registered: ␛[0m
+␛[0;32mI (25952) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (25952) HID_HOST: Starting open event␛[0m
+␛[0;32mI (25952) HID_HOST: 1c:66:6d:07:b2:c2 Device not registered: ␛[0m
+␛[0;32mI (25962) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (25962) HID_HOST: Starting open event␛[0m
+␛[0;32mI (25972) HID_HOST: 1c:66:6d:07:b2:c2 Device not registered: ␛[0m
+␛[0;32mI (25982) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (25982) HID_HOST: Starting open event␛[0m
+␛[0;32mI (25982) HID_HOST: 1c:66:6d:07:b2:c2 Device not registered: ␛[0m
+␛[0;32mI (25992) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (25992) HID_HOST: Starting open event␛[0m
+␛[0;32mI (26002) HID_HOST: 1c:66:6d:07:b2:c2 Device not registered: ␛[0m
+␛[0;32mI (26002) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (26012) HID_HOST: Starting open event␛[0m
+␛[0;32mI (26012) HID_HOST: 1c:66:6d:07:b2:c2 Device not registered: ␛[0m
+␛[0;32mI (26022) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (26022) HID_HOST: Starting open event␛[0m
+␛[0;32mI (26032) HID_HOST: 1c:66:6d:07:b2:c2 Device not registered: ␛[0m
+␛[0;32mI (26032) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (26042) HID_HOST: Starting open event␛[0m
+␛[0;32mI (26042) HID_HOST: 1c:66:6d:07:b2:c2 Device not registered: ␛[0m
+␛[0;32mI (26052) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (26052) HID_HOST: Starting open event␛[0m
+␛[0;32mI (26062) HID_HOST: 1c:66:6d:07:b2:c2 Device not registered: ␛[0m
+␛[0;32mI (26062) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (26072) HID_HOST: Starting open event␛[0m
+␛[0;32mI (26072) HID_HOST: 1c:66:6d:07:b2:c2 Device not registered: ␛[0m
+␛[0;32mI (26082) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (26082) HID_HOST: Starting open event␛[0m
+␛[0;32mI (26092) HID_HOST: 1c:66:6d:07:b2:c2 Device not registered: ␛[0m
+␛[0;32mI (26092) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (26102) HID_HOST: Starting open event␛[0m
+␛[0;32mI (26102) HID_HOST: 1c:66:6d:07:b2:c2 Device not registered: ␛[0m
+␛[0;32mI (26112) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (26112) HID_HOST: Starting open event␛[0m
+␛[0;32mI (26122) HID_HOST: 1c:66:6d:07:b2:c2 Device not registered: ␛[0m
+␛[0;32mI (26122) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (26132) HID_HOST: Starting open event␛[0m
+␛[0;32mI (26132) HID_HOST: 1c:66:6d:07:b2:c2 Device not registered: ␛[0m
+␛[0;32mI (26142) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (26142) HID_HOST: Starting open event␛[0m
+␛[0;32mI (26152) HID_HOST: 1c:66:6d:07:b2:c2 Device not registered: ␛[0m
+␛[0;32mI (26152) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (26162) HID_HOST: Starting open event␛[0m
+␛[0;32mI (26162) HID_HOST: 1c:66:6d:07:b2:c2 Device not registered: ␛[0m
+␛[0;32mI (26172) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (26172) HID_HOST: Starting open event␛[0m
+␛[0;32mI (26182) HID_HOST: 1c:66:6d:07:b2:c2 Device not registered: ␛[0m
+␛[0;32mI (26182) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (26192) HID_HOST: Starting open event␛[0m
+␛[0;32mI (26192) HID_HOST: 1c:66:6d:07:b2:c2 Device not registered: ␛[0m
+␛[0;32mI (26202) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (26202) HID_HOST: Starting open event␛[0m
+␛[0;32mI (26212) HID_HOST: 1c:66:6d:07:b2:c2 Device not registered: ␛[0m
+␛[0;32mI (26212) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (26222) HID_HOST: Starting open event␛[0m
+␛[0;32mI (26222) HID_HOST: 1c:66:6d:07:b2:c2 Device not registered: ␛[0m
+␛[0;32mI (26232) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (26232) HID_HOST: Starting open event␛[0m
+␛[0;32mI (26242) HID_HOST: 1c:66:6d:07:b2:c2 Device not registered: ␛[0m
+␛[0;32mI (26242) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (26252) HID_HOST: Starting open event␛[0m
+␛[0;32mI (26252) HID_HOST: 1c:66:6d:07:b2:c2 Device not registered: ␛[0m
+␛[0;32mI (26262) HID_HOST: HID Event: 2␛[0m
+␛[0;32mI (26262) HID_HOST: Starting open event␛[0m
+␛[0;32mI (26272) HID_HOST: 1c:66:6d:07:b2:c2 Device not registered: ␛[0m
+␛[0;32mI (26272) HID_HOST: HID Event: 0␛[0m
+␛[0;32mI (26282) HID_HOST: Starting open event␛[0m
+␛[0;32mI (26282) HID_HOST: got config␛[0m
+␛[0;32mI (26282) HID_HOST: got addr␛[0m
+␛[0;32mI (26292) HID_HOST: got name␛[0m
+␛[0;32mI (26292) HID_HOST: 1c:66:6d:07:b2:c2 OPEN (Config null): ␛[0m
+BDA:1c:66:6d:07:b2:c2, Status: OK, Connected: YES, Handle: 0, Usage: GAMEPAD
+Name: , Manufacturer: , Serial Number: 
+PID: 0x05c4, VID: 0x054c, VERSION: 0x0100
+Report Map Length: 356
+    VENDOR FEATURE REPORT, ID: 164, Length:  63
+    VENDOR FEATURE REPORT, ID: 160, Length:  63
+    VENDOR FEATURE REPORT, ID: 147, Length:  63
+    VENDOR FEATURE REPORT, ID: 146, Length:  63
+    VENDOR FEATURE REPORT, ID: 145, Length:  63
+    VENDOR FEATURE REPORT, ID: 144, Length:  63
+    VENDOR FEATURE REPORT, ID: 132, Length:  63
+    VENDOR FEATURE REPORT, ID: 131, Length:  63
+    VENDOR FEATURE REPORT, ID: 130, Length:  63
+    VENDOR  OUTPUT REPORT, ID:  25, Length: 546
+    VENDOR   INPUT REPORT, ID:  25, Length: 546
+    VENDOR  OUTPUT REPORT, ID:  24, Length: 525
+    VENDOR   INPUT REPORT, ID:  24, Length: 525
+    VENDOR  OUTPUT REPORT, ID:  23, Length: 461
+    VENDOR   INPUT REPORT, ID:  23, Length: 461
+    VENDOR  OUTPUT REPORT, ID:  22, Length: 397
+    VENDOR   INPUT REPORT, ID:  22, Length: 397
+    VENDOR  OUTPUT REPORT, ID:  21, Length: 333
+    VENDOR   INPUT REPORT, ID:  21, Length: 333
+    VENDOR  OUTPUT REPORT, ID:  20, Length: 269
+    VENDOR   INPUT REPORT, ID:  20, Length: 269
+    VENDOR  OUTPUT REPORT, ID:  19, Length: 205
+    VENDOR   INPUT REPORT, ID:  19, Length: 205
+    VENDOR  OUTPUT REPORT, ID:  18, Length: 141
+    VENDOR   INPUT REPORT, ID:  18, Length: 141
+    VENDOR  OUTPUT REPORT, ID:  17, Length:  77
+    VENDOR   INPUT REPORT, ID:  17, Length:  77
+    VENDOR FEATURE REPORT, ID: 242, Length:  15
+    VENDOR FEATURE REPORT, ID: 241, Length:  63
+    VENDOR FEATURE REPORT, ID: 240, Length:  63
+    VENDOR FEATURE REPORT, ID:   4, Length:  46
+    VENDOR FEATURE REPORT, ID:   3, Length:  38
+    VENDOR FEATURE REPORT, ID:   8, Length:  47
+    VENDOR FEATURE REPORT, ID:   7, Length:  48
+    VENDOR FEATURE REPORT, ID:   6, Length:  52
+    VENDOR FEATURE REPORT, ID:   5, Length:  40
+    VENDOR FEATURE REPORT, ID: 163, Length:  48
+    VENDOR FEATURE REPORT, ID:   2, Length:  36
+   GAMEPAD   INPUT REPORT, ID:   1, Length:   9
+␛[0;32mI (26482) MAIN: HID Device connected:␛[0m
+␛[0;32mI (26482) MAIN:  -- Product ID: 1476␛[0m
+␛[0;32mI (26492) MAIN:  -- Vender ID: 1356␛[0m
+␛[0;32mI (26492) MAIN:  -- Version: 256␛[0m

@@ -23,18 +23,22 @@ SwitchProController::SwitchProController(esp_hidh_dev_t *hid_device_id) : BtHidI
     button_map[GAMEPAD_BUTTON_MEDIA] = S_PRO_BUTTON2_CAPTURE + 8;
 }
 
-void SwitchProController::onInputEvent(uint8_t *data, uint16_t length) {
-    ESP_LOGI("PROCON", "Recieved input data");
+void SwitchProController::onInputEvent(uint8_t report_id, uint8_t *data, uint16_t length) {
+    //ESP_LOGI("PROCON", "Recieved input data with id %d and id %d and length %d", report_id, data[0], length);
+    //if(length >= 11)
+    //ReceiveBtData(data);
+    //ESP_LOGI("PROCON", "B1: %x B2: %x RX: %d RY: %d", *output.buttons1, *output.buttons2, output.axis[GAMEPAD_AXIS_R_STICK_X], output.axis[GAMEPAD_AXIS_R_STICK_Y]);
+    //ESP_LOGI("PROCON", "B1: %x", *output.buttons1);
 }
 
-void SwitchProController::onFeatureEvent(uint8_t *data, uint16_t length) {
+void SwitchProController::onFeatureEvent(uint8_t report_id, uint8_t *data, uint16_t length) {
     ESP_LOGI("PROCON", "Recieved feature data");
 }
 
 void SwitchProController::ReceiveBtData(uint8_t *data) {
-    data[0] = 0;
-    data[1] = 0; // timer?
-    data[2] = 0; // Battery
+    //data[0] = 0;
+    //data[1] = 0; // timer?
+    //data[2] = 0; // Battery
     //buttons
     *output.buttons1 = data[3];
     *output.buttons2 = data[4];

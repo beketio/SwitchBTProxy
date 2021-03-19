@@ -18,10 +18,12 @@ public:
     esp_hidh_dev_t *getDeviceId();
     uint8_t getBatteryLevel();
     void onBatteryEvent(uint8_t level);
-    virtual void onInputEvent(uint8_t *data, uint16_t length) = 0;
-    virtual void onFeatureEvent(uint8_t *data, uint16_t length) = 0;
+    virtual void onInputEvent(uint8_t report_id, uint8_t *data, uint16_t length) = 0;
+    virtual void onFeatureEvent(uint8_t report_id, uint8_t *data, uint16_t length) = 0;
 
 protected:
     esp_hidh_dev_t *device_id;
     uint8_t battery_level;
+    void sendOutputReport();
+    void sendFeatureReport();
 };
