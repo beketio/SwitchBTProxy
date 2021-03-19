@@ -6,6 +6,7 @@
 #include "nvs_flash.h"
 #include "esp_system.h"
 #include "esp_log.h"
+#include "esp_gap_ble_api.h"
 
 #include "bluetooth/bt_gap.h"
 #include "bluetooth/bt_hid_host.h"
@@ -23,16 +24,14 @@ extern "C" {
 	void app_main(void);
 }
 
-static xSemaphoreHandle discover_semaphore = nullptr;
 static esp_bd_addr_t *discovered_addr;
 
-void deviceFoundCallback(bt_discovered_device *device) {
+void deviceFoundCallback(BtGap::bt_discovered_device *device) {
     // Check if HID device
     if(device->major_class == ESP_BT_COD_MAJOR_DEV_PERIPHERAL) {
         ESP_LOGI(MAIN_TAG, "Found HID device: %s %s ", device->address_str, device->name);
         discovered_addr = &device->address;
         BtGap::stopDiscovery();
-        xSemaphoreGive(discover_semaphore);
     }
 }
 
@@ -65,8 +64,6 @@ void app_main(void)
     }
     ESP_ERROR_CHECK( ret );
 
-    discover_semaphore = xSemaphoreCreateBinary();
-
     BtGap::startBluetooth("EEE ESS PEE");
     ESP_LOGI(MAIN_TAG, "Bluetooth started");
 
@@ -76,9 +73,7 @@ void app_main(void)
 
     ESP_LOGI(MAIN_TAG, "Discovering...");
     BtGap::setDeviceFoundCallback(deviceFoundCallback);
-    BtGap::startDiscovery(10);
-
-    xSemaphoreTake(discover_semaphore, portMAX_DELAY);
+    BtGap::startDiscovery(10, false);
 
     BtHidHost::connect(*discovered_addr);
     ESP_LOGI(MAIN_TAG, "Connected to HID Device");

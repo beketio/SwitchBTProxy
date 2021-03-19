@@ -1,6 +1,8 @@
 #include "bt_gap.h"
 
-DeviceFoundCallback device_found_callback = nullptr;
+BtGap::DeviceFoundCallback BtGap::device_found_callback = nullptr;
+xSemaphoreHandle BtGap::discover_semaphore = nullptr;
+
 
 void BtGap::onDeviceDiscover(esp_bt_gap_cb_param_t *param) {
 
@@ -114,7 +116,8 @@ void BtGap::gapCallback(esp_bt_gap_cb_event_t event, esp_bt_gap_cb_param_t *para
     case ESP_BT_GAP_DISC_STATE_CHANGED_EVT: {
         if (param->disc_st_chg.state == ESP_BT_GAP_DISCOVERY_STOPPED) {
             ESP_LOGI(GAP_TAG, "Device discovery stopped.");
-            // get device stuff
+            // Release dicscovery semaphore
+            xSemaphoreGive(discover_semaphore);
         } else if (param->disc_st_chg.state == ESP_BT_GAP_DISCOVERY_STARTED) {
             ESP_LOGI(GAP_TAG, "Discovery started.");
         }
@@ -134,8 +137,8 @@ void BtGap::gapCallback(esp_bt_gap_cb_event_t event, esp_bt_gap_cb_param_t *para
             } else {
                 ESP_LOGI(GAP_TAG, "Services for device %s not found", Utils::AddrToStr(p_dev->bda, bda_str, 18));
             }
-        }*/
-        break;
+        }
+        break; */
     }
     case ESP_BT_GAP_RMT_SRVC_REC_EVT:
     default:
@@ -158,6 +161,8 @@ void BtGap::startBluetooth(const char *device_name) {
 
     ESP_LOGI(GAP_TAG, "Starting Bluetooth...");
 
+    discover_semaphore = xSemaphoreCreateBinary();
+
     // Error return value
     esp_err_t ret;
 
@@ -174,7 +179,7 @@ void BtGap::startBluetooth(const char *device_name) {
 
     // Enable the BT controller in classic mode (version < 4.0)
     ESP_LOGI(GAP_TAG, "enable controller...");
-    if ((ret = esp_bt_controller_enable(ESP_BT_MODE_BTDM)) != ESP_OK) {
+    if ((ret = esp_bt_controller_enable((esp_bt_mode_t) bt_cfg.mode)) != ESP_OK) {
         ESP_LOGE(GAP_TAG, "%s enable controller failed: %s\n", __func__, esp_err_to_name(ret));
         return;
     }
@@ -217,11 +222,16 @@ void BtGap::startBluetooth(const char *device_name) {
 
 }
 
-void BtGap::startDiscovery(uint8_t timeout) {
+void BtGap::startDiscovery(uint8_t timeout, bool blocking) {
     esp_err_t ret;
     if((ret = esp_bt_gap_start_discovery(ESP_BT_INQ_MODE_GENERAL_INQUIRY, timeout, 0)) != ESP_OK) {
         ESP_LOGE(GAP_TAG, "%s start discovery failed: %s\n", __func__, esp_err_to_name(ret));
     }
+
+    // Block until scan complete
+    if(blocking && discover_semaphore)
+        if(xSemaphoreTake(discover_semaphore, portTICK_PERIOD_MS * timeout * 1500) == pdFALSE)
+            ESP_LOGE(GAP_TAG, "Discovery did not complete within the specified timeout");
 }
 
 void BtGap::stopDiscovery() {

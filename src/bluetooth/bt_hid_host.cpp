@@ -79,7 +79,11 @@ void BtHidHost::init(HidInputDeviceConnectedCallback connected_callback, HidInpu
     _connected_callback = connected_callback;
     _disconnected_callback = disconnected_callback;
 
-    ESP_ERROR_CHECK( esp_ble_gattc_register_callback(esp_hidh_gattc_event_handler) );
+    // esp_hidh checks for this, even in BT_CLASSIC mode ಠ╭╮ಠ
+    // If a gattc callback isn't registered, epd_
+    #if CONFIG_GATTC_ENABLE
+        ESP_ERROR_CHECK( esp_ble_gattc_register_callback(esp_hidh_gattc_event_handler) );
+    #endif /* CONFIG_GATTC_ENABLE */
 
     esp_hidh_config_t config = {
         .callback = hidCallback,
