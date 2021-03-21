@@ -20,4 +20,11 @@ void BtHidInputDevice::onBatteryEvent(uint8_t level) {
     battery_level = level;
 }
 
+void BtHidInputDevice::sendOutputReport(uint8_t repord_id, uint8_t *data, uint8_t length) {
+    esp_hidh_dev_output_set(device_id, 0, repord_id, data, length);
+}
+
+void BtHidInputDevice::sendFeatureReport(uint8_t repord_id, uint8_t *data, uint8_t length) {
+    esp_hidh_dev_feature_set(device_id, 0, repord_id, data, length);
+}
 

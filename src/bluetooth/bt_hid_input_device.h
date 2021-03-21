@@ -24,6 +24,6 @@ public:
 protected:
     esp_hidh_dev_t *device_id;
     uint8_t battery_level;
-    void sendOutputReport();
-    void sendFeatureReport();
+    void sendOutputReport(uint8_t repord_id, uint8_t *data, uint8_t length);
+    void sendFeatureReport(uint8_t repord_id, uint8_t *data, uint8_t length);
 };

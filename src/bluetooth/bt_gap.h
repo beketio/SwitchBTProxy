@@ -17,9 +17,6 @@
 
 #define GAP_TAG "GAP"
 
-
-
-
 class BtGap {
 
 public:
@@ -37,9 +34,6 @@ public:
     static void startDiscovery(uint8_t timeout, bool blocking);
     static void stopDiscovery();
     static void setDeviceFoundCallback(DeviceFoundCallback callback);
-
-    
-
 
 private:
     static void gapCallback(esp_bt_gap_cb_event_t event, esp_bt_gap_cb_param_t *param);
