@@ -230,7 +230,7 @@ void BtGap::startDiscovery(uint8_t timeout, bool blocking) {
 
     // Block until scan complete
     if(blocking && discover_semaphore)
-        if(xSemaphoreTake(discover_semaphore, portTICK_PERIOD_MS * timeout * 1500) == pdFALSE)
+        if(xSemaphoreTake(discover_semaphore, pdMS_TO_TICKS(timeout * 1500)) == pdFALSE)
             ESP_LOGE(GAP_TAG, "Discovery did not complete within the specified timeout");
 }
 

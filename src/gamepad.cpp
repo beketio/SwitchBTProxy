@@ -8,24 +8,24 @@ GamepadData::GamepadData(uint8_t *map) {
     button_map = map;
 }
 
-uint8_t GamepadData::GetButton(uint8_t index) {
-    return buttons & (1 << button_map[index]);
+uint8_t GamepadData::getButton(ButtonIndex index) {
+    return (buttons >> button_map[index]) & 0x01;
 }
 
-uint8_t GamepadData::GetAxis(uint8_t index) {
+uint8_t GamepadData::getAxis(AxisIndex index) {
     return axis[index];
 }
 
-void GamepadData::SetButton(uint8_t index, uint8_t value) {
+void GamepadData::setButton(ButtonIndex index, uint8_t value) {
     uint8_t b_index = button_map[index];
-    uint8_t current = buttons & (1 << b_index);
+    uint8_t current = (buttons >> b_index) & 0x01;
     if(!current && value)
-        buttons |= (1 << b_index);
+        buttons |= (1ul << b_index);
     else if(current && !value)
-        buttons &= ~(1 << b_index);
+        buttons &= ~(1ul << b_index);
 }
 
-void GamepadData::SetAxis(uint8_t index, uint8_t value) {
+void GamepadData::setAxis(AxisIndex index, uint8_t value) {
     axis[index] = value;
 }
 

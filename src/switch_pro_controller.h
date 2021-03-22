@@ -14,7 +14,7 @@
 // Joycon specific              4
 // Joycon specific              5
 #define S_PRO_BUTTON1_R         6
-#define S_PRO_BUTTON1_ZR        7
+#define S_PRO_BUTTON1_RZ        7
 
 #define S_PRO_BUTTON2_MINUS     0
 #define S_PRO_BUTTON2_PLUS      1
@@ -32,7 +32,7 @@
 // Joycon specific              4
 // Joycon specific              5
 #define S_PRO_BUTTON3_L         6
-#define S_PRO_BUTTON3_ZL        7
+#define S_PRO_BUTTON3_LZ        7
 
 class SwitchProController: public Gamepad, public BtHidInputDevice {
 
@@ -42,9 +42,18 @@ public:
     void onFeatureEvent(uint8_t report_id, uint8_t *data, uint16_t length);
 
 private:
-    void readStandardInput(uint8_t *data);
-    void readSimpleInput(uint8_t *data);
+    void readStandardInput(uint8_t *data, uint16_t length);
+    void readSimpleInput(uint8_t *data, uint16_t length);
+    void readSubcommandData(uint8_t *data, uint16_t length);
+    void readNfcData(uint8_t *data, uint16_t length);
+    void readImuData(uint8_t *data, uint16_t length);
+
+    void sendSubcommand(uint8_t command_id, uint8_t *data, uint16_t length);
     void SendBtData(uint8_t *data);
+
+    xSemaphoreHandle subcommand_semaphore;
+    uint8_t global_packet_num;
+    
 
     /*
         For more information see this report. Special thanks to all the contributors.
@@ -127,7 +136,7 @@ private:
         // SPI flash read
         rsubcommand_spi_flash_read = 0x10,
         // SPI flash write
-        rsubcommand_spi_flash_read = 0x11,
+        rsubcommand_spi_flash_write = 0x11,
         // SPI flash sector erase
         rsubcommand_spi_flash_erase = 0x12,
         // Reset NFC/IR MCU

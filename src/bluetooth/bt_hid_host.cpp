@@ -63,11 +63,12 @@ void BtHidHost::hidCallback(void* event_handler_arg, esp_event_base_t event_base
     if(event == ESP_HIDH_BATTERY_EVENT) {
         device->onBatteryEvent(param->battery.level);
     } 
+    // Send data-1 because the esp_hid library cuts it out.
     else if(event == ESP_HIDH_INPUT_EVENT) {
-        device->onInputEvent(param->input.report_id, param->input.data, param->input.length);
+        device->onInputEvent(param->input.report_id, param->input.data - 1, param->input.length + 1);
     }
     else if(event == ESP_HIDH_FEATURE_EVENT) {
-        device->onFeatureEvent(param->input.report_id, param->input.data, param->input.length);
+        device->onFeatureEvent(param->input.report_id, param->input.data - 1, param->input.length + 1);
     }
     else {
         ESP_LOGE(HIDH_TAG, "Unhandled event: %d", event);
