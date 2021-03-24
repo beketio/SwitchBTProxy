@@ -12,4 +12,6 @@ typedef struct {
     char device_name[ESP_BT_GAP_MAX_BDNAME_LEN + 1];
 } bt_device;
 
-void init();
+class BtHidDeviceApi {
+    static void init();
+};

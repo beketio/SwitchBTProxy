@@ -4,6 +4,8 @@
 
 #include "switch_pro_controller.h"
 
+#include <string.h>
+
 SwitchProController::SwitchProController(esp_hidh_dev_t *hid_device_id) : BtHidInputDevice(hid_device_id) {
     button_map[GamepadData::button_a] = S_PRO_BUTTON1_A;
     button_map[GamepadData::button_b] = S_PRO_BUTTON1_B;
@@ -210,7 +212,6 @@ void SwitchProController::sendSubcommand(uint8_t command_id, uint8_t *data, uint
     buf[7] = 0;
     buf[8] = 0x01;
     buf[9] = 0x40;*/
-
 
     buf[10] = command_id;
     memcpy(buf + 11, data, length);

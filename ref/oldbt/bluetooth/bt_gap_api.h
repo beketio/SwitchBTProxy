@@ -17,7 +17,7 @@
 
 #define GAP_TAG "GAP"
 
-class BtGap {
+class BtGapApi {
 
 public:
     typedef struct {

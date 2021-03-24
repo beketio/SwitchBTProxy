@@ -1,15 +1,17 @@
-#include "bt_hid_host.h"
+#include "bt_hid_host_api.h"
 
 // init static vars
-std::unordered_map<esp_hidh_dev_t*, BtHidInputDevice*> BtHidHost::device_map;
-HidInputDeviceConnectedCallback BtHidHost::_connected_callback;
-HidInputDeviceDisconnectedCallback BtHidHost::_disconnected_callback;
+std::unordered_map<esp_hidh_dev_t*, BtHidInputDevice*> BtHidHostApi::device_map;
+HidInputDeviceConnectedCallback BtHidHostApi::_connected_callback;
+HidInputDeviceDisconnectedCallback BtHidHostApi::_disconnected_callback;
 
-void BtHidHost::hidCallback(void* event_handler_arg, esp_event_base_t event_base, int32_t event_id, void* event_data) {
+void BtHidHostApi::hidCallback(void* event_handler_arg, esp_event_base_t event_base, int32_t event_id, void* event_data) {
     // ESP_LOGI(HIDH_TAG, "HID Event: %d", event_id);
     // Get event id and data
     esp_hidh_event_t event = (esp_hidh_event_t) event_id;
     esp_hidh_event_data_t *param = (esp_hidh_event_data_t *) event_data;
+
+    //btc_transfer_context()
 
     // Get device id from open event struct (every union has dev value, so any substruct works)
     esp_hidh_dev_t *device_id = param->open.dev;
@@ -75,7 +77,7 @@ void BtHidHost::hidCallback(void* event_handler_arg, esp_event_base_t event_base
     }
 }
 
-void BtHidHost::init(HidInputDeviceConnectedCallback connected_callback, HidInputDeviceDisconnectedCallback disconnected_callback) {
+void BtHidHostApi::init(HidInputDeviceConnectedCallback connected_callback, HidInputDeviceDisconnectedCallback disconnected_callback) {
     _connected_callback = connected_callback;
     _disconnected_callback = disconnected_callback;
 
@@ -97,15 +99,15 @@ void BtHidHost::init(HidInputDeviceConnectedCallback connected_callback, HidInpu
     ESP_ERROR_CHECK( esp_hidh_init(&config) );
 }
 
-void BtHidHost::connect(esp_bd_addr_t address) {
+void BtHidHostApi::connect(esp_bd_addr_t address) {
     esp_hidh_dev_open(address, ESP_HID_TRANSPORT_BT, BLE_ADDR_TYPE_PUBLIC);
 }
 
-void BtHidHost::disconnect(esp_hidh_dev_t* device_id) {
+void BtHidHostApi::disconnect(esp_hidh_dev_t* device_id) {
     esp_hidh_dev_close(device_id);
     device_map[device_id] = nullptr;
 }
 
-void BtHidHost::registerInputDevice(BtHidInputDevice* device) {
+void BtHidHostApi::registerInputDevice(BtHidInputDevice* device) {
     device_map[device->getDeviceId()] =  device;
 }

@@ -1,10 +1,10 @@
-#include "bt_gap.h"
+#include "bt_gap_api.h"
 
-BtGap::DeviceFoundCallback BtGap::device_found_callback = nullptr;
-xSemaphoreHandle BtGap::discover_semaphore = nullptr;
+BtGapApi::DeviceFoundCallback BtGapApi::device_found_callback = nullptr;
+xSemaphoreHandle BtGapApi::discover_semaphore = nullptr;
 
 
-void BtGap::onDeviceDiscover(esp_bt_gap_cb_param_t *param) {
+void BtGapApi::onDeviceDiscover(esp_bt_gap_cb_param_t *param) {
 
     // Create discovered device struct
     bt_discovered_device device;
@@ -106,7 +106,7 @@ void BtGap::onDeviceDiscover(esp_bt_gap_cb_param_t *param) {
 }
 
 // Callback function for GAP events
-void BtGap::gapCallback(esp_bt_gap_cb_event_t event, esp_bt_gap_cb_param_t *param) {
+void BtGapApi::gapCallback(esp_bt_gap_cb_event_t event, esp_bt_gap_cb_param_t *param) {
     ESP_LOGI(GAP_TAG, "GAP callback %d", event);
     switch (event) {
     case ESP_BT_GAP_DISC_RES_EVT: {
@@ -152,7 +152,7 @@ void BtGap::gapCallback(esp_bt_gap_cb_event_t event, esp_bt_gap_cb_param_t *para
 /*
     Initializes and enables bluetooth
 */
-void BtGap::startBluetooth(const char *device_name) {
+void BtGapApi::startBluetooth(const char *device_name) {
     // Don't start if already started
     static uint8_t initialized = 0;
     if(initialized)
@@ -222,7 +222,7 @@ void BtGap::startBluetooth(const char *device_name) {
 
 }
 
-void BtGap::startDiscovery(uint8_t timeout, bool blocking) {
+void BtGapApi::startDiscovery(uint8_t timeout, bool blocking) {
     esp_err_t ret;
     if((ret = esp_bt_gap_start_discovery(ESP_BT_INQ_MODE_GENERAL_INQUIRY, timeout, 0)) != ESP_OK) {
         ESP_LOGE(GAP_TAG, "%s start discovery failed: %s\n", __func__, esp_err_to_name(ret));
@@ -234,13 +234,13 @@ void BtGap::startDiscovery(uint8_t timeout, bool blocking) {
             ESP_LOGE(GAP_TAG, "Discovery did not complete within the specified timeout");
 }
 
-void BtGap::stopDiscovery() {
+void BtGapApi::stopDiscovery() {
     esp_err_t ret;
     if((ret = esp_bt_gap_cancel_discovery()) != ESP_OK) {
         ESP_LOGE(GAP_TAG, "%s stop discovery failed: %s\n", __func__, esp_err_to_name(ret));
     }
 }
 
-void BtGap::setDeviceFoundCallback(DeviceFoundCallback callback) {
+void BtGapApi::setDeviceFoundCallback(DeviceFoundCallback callback) {
     device_found_callback = callback;
 }

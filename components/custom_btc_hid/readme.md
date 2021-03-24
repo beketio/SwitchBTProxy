@@ -1,0 +1,1 @@
+For some reason the espidf framework doesn't support BT Classic HID device clients to time to make my own I guess.

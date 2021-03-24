@@ -1,0 +1,8 @@
+#pragma once
+
+#define HID_DEV_MTU_SIZE BT_DEFAULT_BUFFER_SIZE // 64 in fork
+#define HID_DEV_FLUSH_TO 0xffff
+
+#define BTM_SEC_SERVICE_HIDD_SEC_CTRL       51
+#define BTM_SEC_SERVICE_HIDD_NOSEC_CTRL     52
+#define BTM_SEC_SERVICE_HIDD_INTR           53

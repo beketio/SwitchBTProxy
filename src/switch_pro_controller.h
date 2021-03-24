@@ -5,7 +5,7 @@
 #pragma once
 
 #include "gamepad.h"
-#include "bluetooth/bt_hid_input_device.h"
+#include "bt_hid_input_device.h"
 
 #define S_PRO_BUTTON1_Y         0
 #define S_PRO_BUTTON1_X         1
