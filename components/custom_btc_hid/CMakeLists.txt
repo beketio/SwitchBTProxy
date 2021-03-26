@@ -32,7 +32,7 @@ set(priv_include_dirs "private")
 idf_component_register(SRCS "${srcs}"
                        INCLUDE_DIRS "${include_dirs}"
                        PRIV_INCLUDE_DIRS "${priv_include_dirs}"
-                       REQUIRES esp_event bt esp_hid bta_hid)
+                       REQUIRES esp_event bt esp_hid bta_hidd)
 
 
 #include($ENV{IDF_PATH}/tools/cmake/project.cmake)

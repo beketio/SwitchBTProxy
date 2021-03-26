@@ -22,7 +22,7 @@
  *
  ******************************************************************************/
 #include "common/bt_target.h"
-//#if defined(BTA_HD_INCLUDED) && (BTA_HD_INCLUDED == TRUE)
+#if defined(BTA_HD_INCLUDED) && (BTA_HD_INCLUDED == TRUE)
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -276,4 +276,4 @@ extern void BTA_HdReportError(uint8_t error) {
     bta_sys_sendmsg(p_buf);
   }
 }
-//#endif /* BTA_HD_INCLUDED */
+#endif /* BTA_HD_INCLUDED */
